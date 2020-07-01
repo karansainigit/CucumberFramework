@@ -1,0 +1,20 @@
+17:53:28.139 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
+17:53:31.007 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
+17:53:36.240 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
+17:53:39.050 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
+17:55:52.108 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
+17:55:53.651 [main] INFO  StepDefinitions.WebStepDefinition - Navigated to Home Page
+17:55:53.665 [main] INFO  StepDefinitions.WebStepDefinition - Home Page title verified
+17:55:54.465 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
+17:55:59.696 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
+17:56:00.957 [main] INFO  StepDefinitions.WebStepDefinition - Navigated to Home Page
+17:56:01.010 [main] INFO  StepDefinitions.WebStepDefinition - Default Welcome Message verified
+17:56:01.842 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
+17:59:18.194 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
+17:59:19.426 [main] INFO  StepDefinitions.WebStepDefinition - Navigated to Home Page
+17:59:19.440 [main] INFO  StepDefinitions.WebStepDefinition - Home Page title verified
+17:59:20.267 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
+17:59:25.444 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
+17:59:26.727 [main] INFO  StepDefinitions.WebStepDefinition - Navigated to Home Page
+17:59:26.773 [main] INFO  StepDefinitions.WebStepDefinition - Default Welcome Message verified
+17:59:27.555 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed

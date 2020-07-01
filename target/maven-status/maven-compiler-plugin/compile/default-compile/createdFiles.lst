@@ -1,0 +1,4 @@
+PageObjects\HomePageObjects.class
+PageObjects\MobileAppHomeScreenObjects.class
+Resources\Base.class
+PageObjects\MobileAppAnimationScreenObjects.class

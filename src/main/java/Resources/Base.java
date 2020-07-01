@@ -1,0 +1,80 @@
+package Resources;
+
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.remote.MobileCapabilityType;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.net.URL;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+public class Base {
+
+    public WebDriver driver;
+    AndroidDriver<AndroidElement> androiddriver;
+    public Properties prop;
+
+    public WebDriver initializeDriver() throws IOException {
+        prop = new Properties();
+        FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//src//main//java//Resources//Data.properties");
+
+        prop.load(fis);
+
+        String browserName = prop.getProperty("browser");
+
+        if(browserName.contains("chrome")) {
+            System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "//src//main//java//Resources//chromedriver.exe");
+            ChromeOptions options = new ChromeOptions();
+            if (browserName.contains("headless")) {
+                options.addArguments("headless");
+            }
+            driver = new ChromeDriver(options);
+        }
+        else if (browserName.contains("firefox")) {
+            System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir") + "//src//main//java//Resources//gecko.exe");
+            driver = new FirefoxDriver();
+        }
+        else if (browserName.contains("IE")) {
+            System.setProperty("webdriver.ie.driver",System.getProperty("user.dir") + "//src//main//java//Resources//IEDriverServer.exe");
+            driver = new InternetExplorerDriver();
+        }
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        return driver;
+    }
+
+    public AndroidDriver<AndroidElement> initializeAndroid() throws IOException {
+
+        prop = new Properties();
+        FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//src//main//java//Resources//Data.properties");
+
+        prop.load(fis);
+
+        String mobilePlatform = prop.getProperty("mobile");
+
+        DesiredCapabilities cap = new DesiredCapabilities();
+
+        if (mobilePlatform.contains("android")) {
+            File f = new File("src");
+            File fs = new File(f, "ApiDemos-debug.apk");
+
+            cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "android");
+            cap.setCapability(MobileCapabilityType.DEVICE_NAME, "PIXEL 2 API R");
+            cap.setCapability(MobileCapabilityType.APP, fs.getAbsolutePath());
+            cap.setCapability(MobileCapabilityType.NO_RESET, "true");
+
+            androiddriver = new AndroidDriver<AndroidElement>(new URL("http://0.0.0.0:4723/wd/hub"), cap);
+        }
+        androiddriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        return androiddriver;
+    }
+}
