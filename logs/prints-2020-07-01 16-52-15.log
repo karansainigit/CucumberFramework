@@ -1,0 +1,58 @@
+16:28:59.215 [main] INFO  StepDefinitions.WebStepDefinition - Default Welcome Message verified
+16:29:00.038 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
+16:30:43.598 [main] INFO  StepDefinitions.MobileStepDefinition - Android Driver is initialized
+16:30:45.015 [main] INFO  StepDefinitions.MobileStepDefinition - Animation is clicked
+16:30:46.295 [main] INFO  StepDefinitions.MobileStepDefinition - Bouncing Balls is clicked
+16:30:54.140 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
+16:30:55.479 [main] INFO  StepDefinitions.WebStepDefinition - Navigated to Home Page
+16:30:55.492 [main] INFO  StepDefinitions.WebStepDefinition - Home Page title verified
+16:30:56.266 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
+16:31:01.492 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
+16:31:02.889 [main] INFO  StepDefinitions.WebStepDefinition - Navigated to Home Page
+16:31:02.931 [main] INFO  StepDefinitions.WebStepDefinition - Default Welcome Message verified
+16:31:03.715 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
+16:39:38.630 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
+16:39:40.238 [main] INFO  StepDefinitions.WebStepDefinition - Navigated to Home Page
+16:39:40.252 [main] INFO  StepDefinitions.WebStepDefinition - Home Page title verified
+16:39:45.504 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
+16:39:46.983 [main] INFO  StepDefinitions.WebStepDefinition - Navigated to Home Page
+16:39:47.032 [main] INFO  StepDefinitions.WebStepDefinition - Default Welcome Message verified
+16:42:02.901 [main] INFO  StepDefinitions.WebStepDefinition - Android Driver is initialized
+16:42:03.790 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
+16:42:10.442 [main] INFO  StepDefinitions.WebStepDefinition - Android Driver is initialized
+16:42:11.066 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
+16:43:10.477 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
+16:43:12.014 [main] INFO  StepDefinitions.WebStepDefinition - Navigated to Home Page
+16:43:12.027 [main] INFO  StepDefinitions.WebStepDefinition - Home Page title verified
+16:43:12.841 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
+16:43:18.081 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
+16:43:19.757 [main] INFO  StepDefinitions.WebStepDefinition - Navigated to Home Page
+16:43:19.810 [main] INFO  StepDefinitions.WebStepDefinition - Default Welcome Message verified
+16:43:20.894 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
+16:46:46.468 [main] INFO  StepDefinitions.MobileStepDefinition - Android Driver is initialized
+16:46:54.709 [main] INFO  StepDefinitions.MobileStepDefinition - Android Driver is initialized
+16:46:56.514 [main] INFO  StepDefinitions.MobileStepDefinition - Animation is clicked
+16:46:57.950 [main] INFO  StepDefinitions.MobileStepDefinition - Bouncing Balls is clicked
+16:47:00.499 [main] INFO  StepDefinitions.MobileStepDefinition - Mobile App closed
+16:47:05.788 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
+16:47:07.053 [main] INFO  StepDefinitions.WebStepDefinition - Navigated to Home Page
+16:47:07.064 [main] INFO  StepDefinitions.WebStepDefinition - Home Page title verified
+16:47:07.860 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
+16:47:13.092 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
+16:47:14.460 [main] INFO  StepDefinitions.WebStepDefinition - Navigated to Home Page
+16:47:14.497 [main] INFO  StepDefinitions.WebStepDefinition - Default Welcome Message verified
+16:47:15.281 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
+16:47:49.186 [main] INFO  StepDefinitions.MobileStepDefinition - Android Driver is initialized
+16:47:50.982 [main] INFO  StepDefinitions.MobileStepDefinition - Animation is clicked
+16:47:52.543 [main] INFO  StepDefinitions.MobileStepDefinition - Bouncing Balls is clicked
+16:47:55.042 [main] INFO  StepDefinitions.MobileStepDefinition - Mobile App closed
+16:48:00.340 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
+16:48:01.547 [main] INFO  StepDefinitions.WebStepDefinition - Navigated to Home Page
+16:48:01.555 [main] INFO  StepDefinitions.WebStepDefinition - Home Page title verified
+16:48:02.371 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
+16:48:07.608 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
+16:48:08.711 [main] INFO  StepDefinitions.WebStepDefinition - Navigated to Home Page
+16:48:08.748 [main] INFO  StepDefinitions.WebStepDefinition - Default Welcome Message verified
+16:48:09.588 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
+16:52:12.538 [main] INFO  java.lang.reflect.Method[] - Android Driver is initialized
+16:52:14.326 [main] INFO  java.lang.reflect.Method[] - Animation is clicked

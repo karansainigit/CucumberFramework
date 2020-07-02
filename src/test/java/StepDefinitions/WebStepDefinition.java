@@ -23,16 +23,14 @@ public class WebStepDefinition extends Base {
 
     HomePageObjects hp;
 
-    /*@Before
+    @Before("@Web")
     public void initializeBrowser() throws IOException {
         driver = initializeDriver();
         log.info("Driver is initialized");
-    }*/
+    }
 
     @Given("^Navigate to \"([^\"]*)\" website$")
     public void navigateToWebsite(String url) throws Throwable {
-        driver = initializeDriver();
-        log.info("Driver is initialized");
         driver.get(url);
         log.info("Navigated to Home Page");
     }
@@ -50,7 +48,7 @@ public class WebStepDefinition extends Base {
         log.info("Default Welcome Message verified");
     }
 
-    @After
+    @After("@Web")
     public void tearDown() {
         driver.quit();
         log.info("Browser closed");

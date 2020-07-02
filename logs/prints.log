@@ -1,20 +1,23 @@
-17:53:28.139 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
-17:53:31.007 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
-17:53:36.240 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
-17:53:39.050 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
-17:55:52.108 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
-17:55:53.651 [main] INFO  StepDefinitions.WebStepDefinition - Navigated to Home Page
-17:55:53.665 [main] INFO  StepDefinitions.WebStepDefinition - Home Page title verified
-17:55:54.465 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
-17:55:59.696 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
-17:56:00.957 [main] INFO  StepDefinitions.WebStepDefinition - Navigated to Home Page
-17:56:01.010 [main] INFO  StepDefinitions.WebStepDefinition - Default Welcome Message verified
-17:56:01.842 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
-17:59:18.194 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
-17:59:19.426 [main] INFO  StepDefinitions.WebStepDefinition - Navigated to Home Page
-17:59:19.440 [main] INFO  StepDefinitions.WebStepDefinition - Home Page title verified
-17:59:20.267 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
-17:59:25.444 [main] INFO  StepDefinitions.WebStepDefinition - Driver is initialized
-17:59:26.727 [main] INFO  StepDefinitions.WebStepDefinition - Navigated to Home Page
-17:59:26.773 [main] INFO  StepDefinitions.WebStepDefinition - Default Welcome Message verified
-17:59:27.555 [main] INFO  StepDefinitions.WebStepDefinition - Browser closed
+18:11:34.090 [main] INFO  StepDefinitions.MobileStepDefinition - Mobile App closed
+18:11:45.232 [main] INFO  StepDefinitions.MobileStepDefinition - Android Driver is initialized
+18:11:46.901 [main] INFO  StepDefinitions.MobileStepDefinition - App is clicked
+18:11:48.086 [main] INFO  StepDefinitions.MobileStepDefinition - Alert Dialogs is clicked
+18:11:49.167 [main] INFO  StepDefinitions.MobileStepDefinition - Ultra long message clicked
+18:11:57.345 [main] INFO  StepDefinitions.MobileStepDefinition - OK to close
+18:11:57.816 [main] INFO  StepDefinitions.MobileStepDefinition - Mobile App closed
+18:12:08.100 [main] INFO  StepDefinitions.MobileStepDefinition - Android Driver is initialized
+18:12:09.777 [main] INFO  StepDefinitions.MobileStepDefinition - App is clicked
+18:12:10.873 [main] INFO  StepDefinitions.MobileStepDefinition - Alert Dialogs is clicked
+18:12:11.217 [main] INFO  StepDefinitions.MobileStepDefinition - Text Entry dialog clicked
+18:12:12.736 [main] INFO  StepDefinitions.MobileStepDefinition - Name entered
+18:12:13.479 [main] INFO  StepDefinitions.MobileStepDefinition - Password entered
+18:12:16.319 [main] INFO  StepDefinitions.MobileStepDefinition - OK to close
+18:12:16.781 [main] INFO  StepDefinitions.MobileStepDefinition - Mobile App closed
+18:12:23.109 [main] INFO  StepDefinitions.MobileStepDefinition - Android Driver is initialized
+18:12:24.864 [main] INFO  StepDefinitions.MobileStepDefinition - App is clicked
+18:12:26.078 [main] INFO  StepDefinitions.MobileStepDefinition - Alert Dialogs is clicked
+18:12:27.212 [main] INFO  StepDefinitions.MobileStepDefinition - Text Entry dialog clicked
+18:12:28.795 [main] INFO  StepDefinitions.MobileStepDefinition - Name entered
+18:12:29.488 [main] INFO  StepDefinitions.MobileStepDefinition - Password entered
+18:12:32.076 [main] INFO  StepDefinitions.MobileStepDefinition - OK to close
+18:12:32.578 [main] INFO  StepDefinitions.MobileStepDefinition - Mobile App closed

@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jun 30, 2020 05:59:11 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 1, 2020 06:11:12 PM</span>
 				</a>
 			</li>
 			<li>
@@ -90,7 +90,8 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Web</a></li>
+					<li><a href='#'>@Mobile,</a></li>
+					<li><a href='#'>@App</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -153,7 +154,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -168,7 +169,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>16</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -187,64 +188,165 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify Home Page</span>
-						<span class='test-time'>Jun 30, 2020 05:59:11 PM</span>
+						<span class='test-name'>Mobile Test Cases</span>
+						<span class='test-time'>Jul 1, 2020 06:11:13 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
 	<div class='category-list'>
-		<span class='category label white-text'>@Web</span>
+		<span class='category label white-text'>@Mobile,</span>
+		<span class='category label white-text'>@App</span>
 	</div>
-	<span class='duration right label'>0h 0m 7s+487ms</span>
+	<span class='duration right label'>0h 0m 19s+189ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">Verify Home Page Title</span>
+		<span class="desc-text">Verify Alert Dialogs-Single choice list in APIDemos - App</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
-			<span class="bdd-step-name">Given Navigate to "http://live.demoguru99.com/index.php/" website</span>
+			<span class="bdd-step-name">Given User is on home screen and clicks on App</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='4' class='node then pass' status='pass'>
+		<li test-id='4' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Alert Dialogs</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='5' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Single choice list and choose Traffic</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='6' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then Verify Home Page title is "Home page"</span>
+			<span class="bdd-step-name">Then Traffic should be selected</span>
 				<div class='pre'>passed</div>
 			
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='5' status='pass'>
+<div class='scenario node' test-id='7' status='pass'>
 	<div class='category-list'>
-		<span class='category label white-text'>@Web</span>
+		<span class='category label white-text'>@Mobile,</span>
+		<span class='category label white-text'>@App</span>
 	</div>
-	<span class='duration right label'>0h 0m 6s+505ms</span>
+	<span class='duration right label'>0h 0m 23s+223ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">Verify Home Page Default Welcome Message</span>
+		<span class="desc-text">Verify Alert Dialogs-Ultra long message in APIDemos - App</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='6' class='node given pass' status='pass'>
+		<li test-id='8' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
-			<span class="bdd-step-name">Given Navigate to "http://live.demoguru99.com/index.php/" website</span>
+			<span class="bdd-step-name">Given User is on home screen and clicks on App</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='7' class='node then pass' status='pass'>
+		<li test-id='9' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Alert Dialogs</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='10' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Ultra long message and swipe till last</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='11' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then Verify Default Welcome Message is "DEFAULT WELCOME MSG!"</span>
+			<span class="bdd-step-name">Then User clicks on Ultra long message OK</span>
 				<div class='pre'>passed</div>
 			
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='12' status='pass'>
+	<span class='duration right label'>0h 0m 34s+259ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify Alert Dialogs-Text Entry dialog in APIDemos - App</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='13' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Mobile,</span>
+				<span class='category label white-text'>@App</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify Alert Dialogs-Text Entry dialog in APIDemos - App</span>
+			
+				<ul class='steps'>
+					<li test-id='14' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User is on home screen and clicks on App</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='15' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on Alert Dialogs</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='16' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Text Entry dialog and enter username1 , password1</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='17' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User clicks on Text Entry dialog OK</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='18' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Mobile,</span>
+				<span class='category label white-text'>@App</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify Alert Dialogs-Text Entry dialog in APIDemos - App</span>
+			
+				<ul class='steps'>
+					<li test-id='19' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User is on home screen and clicks on App</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='20' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on Alert Dialogs</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='21' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Text Entry dialog and enter username2 , password2</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='22' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User clicks on Text Entry dialog OK</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
 		</li>
 	</ul>
 </div>
@@ -302,14 +404,14 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Web</span>
+						<span class='category-name'>@Mobile,</span>
 						<span class='category-status right'>
-							<span class='label pass'>2</span>
+							<span class='label pass'>4</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 2</span>
+							<span class='label green accent-4 white-text'>Passed: 4</span>
 							
 							
 						</div>
@@ -325,13 +427,72 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jun 30, 2020 05:59:11 PM</td>
-										<td class='linked' test-id='2'>Verify Home Page.Verify Home Page Title</td>
+										<td>Jul 1, 2020 06:11:13 PM</td>
+										<td class='linked' test-id='2'>Mobile Test Cases.Verify Alert Dialogs-Single choice list in APIDemos - App</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jun 30, 2020 05:59:20 PM</td>
-										<td class='linked' test-id='5'>Verify Home Page.Verify Home Page Default Welcome Message</td>
+										<td>Jul 1, 2020 06:11:34 PM</td>
+										<td class='linked' test-id='7'>Mobile Test Cases.Verify Alert Dialogs-Ultra long message in APIDemos - App</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 1, 2020 06:11:57 PM</td>
+										<td class='linked' test-id='13'>Mobile Test Cases.Verify Alert Dialogs-Text Entry dialog in APIDemos - App.Verify Alert Dialogs-Text Entry dialog in APIDemos - App</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 1, 2020 06:12:16 PM</td>
+										<td class='linked' test-id='18'>Mobile Test Cases.Verify Alert Dialogs-Text Entry dialog in APIDemos - App.Verify Alert Dialogs-Text Entry dialog in APIDemos - App</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@App</span>
+						<span class='category-status right'>
+							<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 1, 2020 06:11:13 PM</td>
+										<td class='linked' test-id='2'>Mobile Test Cases.Verify Alert Dialogs-Single choice list in APIDemos - App</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 1, 2020 06:11:34 PM</td>
+										<td class='linked' test-id='7'>Mobile Test Cases.Verify Alert Dialogs-Ultra long message in APIDemos - App</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 1, 2020 06:11:57 PM</td>
+										<td class='linked' test-id='13'>Mobile Test Cases.Verify Alert Dialogs-Text Entry dialog in APIDemos - App.Verify Alert Dialogs-Text Entry dialog in APIDemos - App</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 1, 2020 06:12:16 PM</td>
+										<td class='linked' test-id='18'>Mobile Test Cases.Verify Alert Dialogs-Text Entry dialog in APIDemos - App.Verify Alert Dialogs-Text Entry dialog in APIDemos - App</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -366,31 +527,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>2</div>
-				</div>
-			</div>
-			<div class='col s2'>
-				<div class='card-panel r'>
-					Steps
 					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>16</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jun 30, 2020 05:59:11 PM</div>
+					<div class='panel-lead'>Jul 1, 2020 06:11:12 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jun 30, 2020 05:59:27 PM</div>
+			 		<div class='panel-lead'>Jul 1, 2020 06:12:32 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>15,666ms</div>
+					<div class='panel-lead'>79,669ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -406,8 +567,17 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Web</td>
-							<td>2</td>
+							<td>@Mobile,</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@App</td>
+							<td>4</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -435,7 +605,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 2,
+				passChild: 4,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -444,7 +614,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 4,
+				passGrandChild: 16,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,

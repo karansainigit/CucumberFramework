@@ -1,0 +1,57 @@
+17:23:26.505 [main] INFO  StepDefinitions.MobileStepDefinition - Alert Dialogs is clicked
+17:23:26.698 [main] INFO  StepDefinitions.MobileStepDefinition - Single choice list clicked
+17:23:28.338 [main] INFO  StepDefinitions.MobileStepDefinition - Traffic is selected
+17:23:30.909 [main] INFO  StepDefinitions.MobileStepDefinition - OK to close
+17:23:31.393 [main] INFO  StepDefinitions.MobileStepDefinition - Mobile App closed
+17:36:54.121 [main] INFO  StepDefinitions.MobileStepDefinition - Android Driver is initialized
+17:36:55.688 [main] INFO  StepDefinitions.MobileStepDefinition - App is clicked
+17:36:56.844 [main] INFO  StepDefinitions.MobileStepDefinition - Alert Dialogs is clicked
+17:36:57.041 [main] INFO  StepDefinitions.MobileStepDefinition - Ultra long message clicked
+17:37:01.947 [main] INFO  StepDefinitions.MobileStepDefinition - Mobile App closed
+17:38:29.228 [main] INFO  StepDefinitions.MobileStepDefinition - Android Driver is initialized
+17:38:30.922 [main] INFO  StepDefinitions.MobileStepDefinition - App is clicked
+17:38:32.164 [main] INFO  StepDefinitions.MobileStepDefinition - Alert Dialogs is clicked
+17:38:32.359 [main] INFO  StepDefinitions.MobileStepDefinition - Ultra long message clicked
+17:38:37.314 [main] INFO  StepDefinitions.MobileStepDefinition - Mobile App closed
+17:39:02.292 [main] INFO  StepDefinitions.MobileStepDefinition - Android Driver is initialized
+17:39:03.961 [main] INFO  StepDefinitions.MobileStepDefinition - App is clicked
+17:39:05.156 [main] INFO  StepDefinitions.MobileStepDefinition - Alert Dialogs is clicked
+17:39:05.257 [main] INFO  StepDefinitions.MobileStepDefinition - Ultra long message clicked
+17:39:09.179 [main] INFO  StepDefinitions.MobileStepDefinition - Mobile App closed
+17:39:40.732 [main] INFO  StepDefinitions.MobileStepDefinition - Android Driver is initialized
+17:39:42.433 [main] INFO  StepDefinitions.MobileStepDefinition - App is clicked
+17:39:43.558 [main] INFO  StepDefinitions.MobileStepDefinition - Alert Dialogs is clicked
+17:39:43.652 [main] INFO  StepDefinitions.MobileStepDefinition - Ultra long message clicked
+17:39:48.408 [main] INFO  StepDefinitions.MobileStepDefinition - Mobile App closed
+17:44:39.001 [main] INFO  StepDefinitions.MobileStepDefinition - Android Driver is initialized
+17:44:40.847 [main] INFO  StepDefinitions.MobileStepDefinition - App is clicked
+17:44:42.076 [main] INFO  StepDefinitions.MobileStepDefinition - Alert Dialogs is clicked
+17:44:43.190 [main] INFO  StepDefinitions.MobileStepDefinition - Ultra long message clicked
+17:44:51.362 [main] INFO  StepDefinitions.MobileStepDefinition - OK to close
+17:44:51.807 [main] INFO  StepDefinitions.MobileStepDefinition - Mobile App closed
+17:45:30.840 [main] INFO  StepDefinitions.MobileStepDefinition - Android Driver is initialized
+17:45:32.427 [main] INFO  StepDefinitions.MobileStepDefinition - App is clicked
+17:45:33.636 [main] INFO  StepDefinitions.MobileStepDefinition - Alert Dialogs is clicked
+17:45:34.805 [main] INFO  StepDefinitions.MobileStepDefinition - Ultra long message clicked
+17:45:43.135 [main] INFO  StepDefinitions.MobileStepDefinition - OK to close
+17:45:43.581 [main] INFO  StepDefinitions.MobileStepDefinition - Mobile App closed
+17:46:59.118 [main] INFO  StepDefinitions.MobileStepDefinition - Android Driver is initialized
+17:47:00.709 [main] INFO  StepDefinitions.MobileStepDefinition - App is clicked
+17:47:02.811 [main] INFO  StepDefinitions.MobileStepDefinition - Alert Dialogs is clicked
+17:47:03.119 [main] INFO  StepDefinitions.MobileStepDefinition - Ultra long message clicked
+17:47:11.444 [main] INFO  StepDefinitions.MobileStepDefinition - OK to close
+17:47:11.936 [main] INFO  StepDefinitions.MobileStepDefinition - Mobile App closed
+17:47:46.558 [main] INFO  StepDefinitions.MobileStepDefinition - Android Driver is initialized
+17:47:47.730 [main] INFO  StepDefinitions.MobileStepDefinition - Animation is clicked
+17:47:51.281 [main] INFO  StepDefinitions.MobileStepDefinition - Bouncing Balls is clicked
+17:47:53.841 [main] INFO  StepDefinitions.MobileStepDefinition - Mobile App closed
+17:48:03.687 [main] INFO  StepDefinitions.MobileStepDefinition - Android Driver is initialized
+17:48:05.378 [main] INFO  StepDefinitions.MobileStepDefinition - App is clicked
+17:48:06.525 [main] INFO  StepDefinitions.MobileStepDefinition - Alert Dialogs is clicked
+17:48:06.623 [main] INFO  StepDefinitions.MobileStepDefinition - Single choice list clicked
+17:48:08.631 [main] INFO  StepDefinitions.MobileStepDefinition - Traffic is selected
+17:48:11.557 [main] INFO  StepDefinitions.MobileStepDefinition - OK to close
+17:48:12.572 [main] INFO  StepDefinitions.MobileStepDefinition - Mobile App closed
+17:48:22.865 [main] INFO  StepDefinitions.MobileStepDefinition - Android Driver is initialized
+17:48:24.566 [main] INFO  StepDefinitions.MobileStepDefinition - App is clicked
+17:48:25.789 [main] INFO  StepDefinitions.MobileStepDefinition - Alert Dialogs is clicked

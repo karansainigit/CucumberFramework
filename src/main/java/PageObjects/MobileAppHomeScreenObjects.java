@@ -22,4 +22,12 @@ public class MobileAppHomeScreenObjects {
         animation.click();
         return new MobileAppAnimationScreenObjects(driver);
     }
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='App']")
+    private AndroidElement app;
+
+    public MobileAppAppScreenObjects app() {
+        app.click();
+        return new MobileAppAppScreenObjects(driver);
+    }
 }
