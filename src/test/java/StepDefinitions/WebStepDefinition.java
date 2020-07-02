@@ -29,6 +29,12 @@ public class WebStepDefinition extends Base {
         log.info("Driver is initialized");
     }
 
+    @After("@Web")
+    public void tearDown() {
+        driver.quit();
+        log.info("Browser closed");
+    }
+
     @Given("^Navigate to \"([^\"]*)\" website$")
     public void navigateToWebsite(String url) throws Throwable {
         driver.get(url);
@@ -46,11 +52,5 @@ public class WebStepDefinition extends Base {
         hp = new HomePageObjects(driver);
         Assert.assertEquals(hp.defaultWelcomeMessage().getText(),defaultWelcomeMessage);
         log.info("Default Welcome Message verified");
-    }
-
-    @After("@Web")
-    public void tearDown() {
-        driver.quit();
-        log.info("Browser closed");
     }
 }

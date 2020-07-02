@@ -34,10 +34,16 @@ public class MobileStepDefinition extends Base {
     public MobileAppAppScreenObjects maa;
     public MobileAppAlertDialogsUnderAppScreenObjects maad;
 
-    @Before("@Mobile,@App,@Animation")
+    @Before("@Mobile,@Animation,@App")
     public void initializeMobile() throws IOException {
         driver = initializeAndroid();
         log.info("Android Driver is initialized");
+    }
+
+    @After("@Mobile,@Animation,@App")
+    public void closingMobileApp() {
+        driver.quit();
+        log.info("Mobile App closed");
     }
 
     @Given("^User is on home screen and clicks on Animation$")
@@ -125,11 +131,5 @@ public class MobileStepDefinition extends Base {
         maad.tedOK().click();
         Thread.sleep(2000);
         log.info("OK to close");
-    }
-
-    @After("@Mobile,@App,@Animation")
-    public void closingMobileApp() {
-        driver.quit();
-        log.info("Mobile App closed");
     }
 }

@@ -12,7 +12,7 @@ import java.io.File;
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/java/Features/",
         glue="StepDefinitions",
-        tags = {"@Mobile"},
+        tags = {"@Web,@Mobile"},
         plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"})
 
 public class TestRunner extends AbstractTestNGCucumberTests {
