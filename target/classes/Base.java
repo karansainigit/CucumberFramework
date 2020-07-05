@@ -3,6 +3,9 @@ package Resources;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -76,5 +79,17 @@ public class Base {
         }
         androiddriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return androiddriver;
+    }
+
+    public void getScreenshotWeb(WebDriver driver) throws IOException {
+        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        String destinationFile = System.getProperty("user.dir") + "\\logs\\webscreen.png";
+        FileUtils.copyFile(src, new File(destinationFile));
+    }
+
+    public void getScreenshotAndroid(AndroidDriver<AndroidElement> driver) throws IOException {
+        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        String destinationFile = System.getProperty("user.dir") + "\\logs\\androidscreen.png";
+        FileUtils.copyFile(src, new File(destinationFile));
     }
 }

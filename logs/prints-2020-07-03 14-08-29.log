@@ -1,0 +1,51 @@
+14:08:27.971 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://dummy.restapiexample.com:80
+14:08:28.034 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to dummy.restapiexample.com:80
+14:08:28.339 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+14:08:28.343 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+14:08:28.343 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+14:08:28.345 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+14:08:28.348 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+14:08:28.349 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /api/v1/employees HTTP/1.1
+14:08:28.350 [main] DEBUG org.apache.http.wire -  >> "GET /api/v1/employees HTTP/1.1[\r][\n]"
+14:08:28.353 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+14:08:28.353 [main] DEBUG org.apache.http.wire -  >> "Host: dummy.restapiexample.com[\r][\n]"
+14:08:28.353 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+14:08:28.353 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_251)[\r][\n]"
+14:08:28.354 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:08:28.357 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+14:08:28.358 [main] DEBUG org.apache.http.headers - >> GET /api/v1/employees HTTP/1.1
+14:08:28.358 [main] DEBUG org.apache.http.headers - >> Accept: */*
+14:08:28.358 [main] DEBUG org.apache.http.headers - >> Host: dummy.restapiexample.com
+14:08:28.358 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+14:08:28.358 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_251)
+14:08:28.358 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+14:08:29.040 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+14:08:29.043 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+14:08:29.044 [main] DEBUG org.apache.http.wire -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+14:08:29.044 [main] DEBUG org.apache.http.wire -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+14:08:29.044 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+14:08:29.044 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+14:08:29.044 [main] DEBUG org.apache.http.wire -  << "Date: Fri, 03 Jul 2020 21:08:29 GMT[\r][\n]"
+14:08:29.044 [main] DEBUG org.apache.http.wire -  << "Display: staticcontent_sol[\r][\n]"
+14:08:29.045 [main] DEBUG org.apache.http.wire -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+14:08:29.045 [main] DEBUG org.apache.http.wire -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+14:08:29.045 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+14:08:29.045 [main] DEBUG org.apache.http.wire -  << "Referrer-Policy: [\r][\n]"
+14:08:29.045 [main] DEBUG org.apache.http.wire -  << "Response: 200[\r][\n]"
+14:08:29.046 [main] DEBUG org.apache.http.wire -  << "Server: nginx/1.16.0[\r][\n]"
+14:08:29.046 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: PHPSESSID=4de9d8ea28604723a1a89bfe640ad602; path=/[\r][\n]"
+14:08:29.046 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding[\r][\n]"
+14:08:29.046 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding,User-Agent,Origin,X-APP-JSON[\r][\n]"
+14:08:29.046 [main] DEBUG org.apache.http.wire -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+14:08:29.046 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Display: staticcontent_sol[\r][\n]"
+14:08:29.046 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Response: 200[\r][\n]"
+14:08:29.047 [main] DEBUG org.apache.http.wire -  << "X-Sol: pub_site[\r][\n]"
+14:08:29.047 [main] DEBUG org.apache.http.wire -  << "Content-Length: 595[\r][\n]"
+14:08:29.047 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+14:08:29.048 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+14:08:29.049 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+14:08:29.049 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+14:08:29.049 [main] DEBUG org.apache.http.headers - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+14:08:29.049 [main] DEBUG org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate
+14:08:29.049 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+14:08:29.049 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=utf-8

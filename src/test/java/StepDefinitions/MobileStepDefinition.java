@@ -62,7 +62,6 @@ public class MobileStepDefinition extends Base {
     @Then("^Bouncing Balls are displayed$")
     public void bouncingBallsAreDisplayed() throws InterruptedException {
         Thread.sleep(2000);
-        driver.quit();
     }
 
     @Given("^User is on home screen and clicks on App$")

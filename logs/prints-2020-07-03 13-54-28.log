@@ -1,0 +1,55 @@
+13:54:27.461 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+13:54:27.494 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+13:54:27.495 [main] DEBUG org.apache.http.headers - >> GET /api/v1/employees HTTP/1.1
+13:54:27.495 [main] DEBUG org.apache.http.headers - >> Accept: */*
+13:54:27.495 [main] DEBUG org.apache.http.headers - >> Host: dummy.restapiexample.com
+13:54:27.495 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+13:54:27.495 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_251)
+13:54:27.496 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+13:54:28.118 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+13:54:28.125 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+13:54:28.126 [main] DEBUG org.apache.http.wire -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+13:54:28.126 [main] DEBUG org.apache.http.wire -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+13:54:28.127 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+13:54:28.127 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+13:54:28.127 [main] DEBUG org.apache.http.wire -  << "Date: Fri, 03 Jul 2020 20:54:28 GMT[\r][\n]"
+13:54:28.127 [main] DEBUG org.apache.http.wire -  << "Display: staticcontent_sol[\r][\n]"
+13:54:28.127 [main] DEBUG org.apache.http.wire -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+13:54:28.128 [main] DEBUG org.apache.http.wire -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+13:54:28.128 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+13:54:28.128 [main] DEBUG org.apache.http.wire -  << "Referrer-Policy: [\r][\n]"
+13:54:28.128 [main] DEBUG org.apache.http.wire -  << "Response: 200[\r][\n]"
+13:54:28.129 [main] DEBUG org.apache.http.wire -  << "Server: nginx/1.16.0[\r][\n]"
+13:54:28.129 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: PHPSESSID=a93678fa69a8ad122651b53814bc0a46; path=/[\r][\n]"
+13:54:28.129 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding[\r][\n]"
+13:54:28.129 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding,User-Agent,Origin,X-APP-JSON[\r][\n]"
+13:54:28.129 [main] DEBUG org.apache.http.wire -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+13:54:28.130 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Display: staticcontent_sol[\r][\n]"
+13:54:28.130 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Response: 200[\r][\n]"
+13:54:28.130 [main] DEBUG org.apache.http.wire -  << "X-Sol: pub_site[\r][\n]"
+13:54:28.130 [main] DEBUG org.apache.http.wire -  << "Content-Length: 595[\r][\n]"
+13:54:28.130 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+13:54:28.132 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+13:54:28.132 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+13:54:28.132 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+13:54:28.133 [main] DEBUG org.apache.http.headers - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+13:54:28.133 [main] DEBUG org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate
+13:54:28.133 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+13:54:28.133 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=utf-8
+13:54:28.133 [main] DEBUG org.apache.http.headers - << Date: Fri, 03 Jul 2020 20:54:28 GMT
+13:54:28.133 [main] DEBUG org.apache.http.headers - << Display: staticcontent_sol
+13:54:28.134 [main] DEBUG org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+13:54:28.134 [main] DEBUG org.apache.http.headers - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+13:54:28.134 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+13:54:28.134 [main] DEBUG org.apache.http.headers - << Referrer-Policy: 
+13:54:28.134 [main] DEBUG org.apache.http.headers - << Response: 200
+13:54:28.134 [main] DEBUG org.apache.http.headers - << Server: nginx/1.16.0
+13:54:28.135 [main] DEBUG org.apache.http.headers - << Set-Cookie: PHPSESSID=a93678fa69a8ad122651b53814bc0a46; path=/
+13:54:28.135 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding
+13:54:28.135 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding,User-Agent,Origin,X-APP-JSON
+13:54:28.136 [main] DEBUG org.apache.http.headers - << X-Ezoic-Cdn: Miss
+13:54:28.136 [main] DEBUG org.apache.http.headers - << X-Middleton-Display: staticcontent_sol
+13:54:28.136 [main] DEBUG org.apache.http.headers - << X-Middleton-Response: 200
+13:54:28.136 [main] DEBUG org.apache.http.headers - << X-Sol: pub_site
+13:54:28.136 [main] DEBUG org.apache.http.headers - << Content-Length: 595
+13:54:28.151 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
