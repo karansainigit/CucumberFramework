@@ -15,6 +15,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
@@ -195,11 +196,12 @@ public class DemoQAStepDefinition extends Base {
     @When("^User clicks on Links$")
     public void userClicksOnLinks() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,400)");
+        js.executeScript("window.scrollBy(0,350)");
 
         dqa = new DemoQAPageObjects(driver);
         dqa.links().click();
         log.info("Links is clicked");
+        js.executeScript("window.scrollBy(0,50)");
     }
 
     @And("^User clicks on all the links that will send API call$")
@@ -263,7 +265,7 @@ public class DemoQAStepDefinition extends Base {
         Assert.assertTrue(unauthorizedLinkMessage.contains("Unauthorized"));
         log.info("Unauthorized link message verified");
 
-        Assert.assertTrue(forbiddenLinkMessage.contains("403"));
+         Assert.assertTrue(forbiddenLinkMessage.contains("403"));
         Assert.assertTrue(forbiddenLinkMessage.contains("Forbidden"));
         log.info("Forbidden link message verified");
 
@@ -360,5 +362,331 @@ public class DemoQAStepDefinition extends Base {
     public void verifyFileIsUploadedSuccessfully() {
         Assert.assertEquals(dqa.uploadedFilePath().getText(),"C:\\fakepath\\sampleFile.jpeg");
         log.info("Uploaded file verified successfully");
+    }
+
+    @When("^User clicks on Dynamic Properties$")
+    public void userClicksOnDynamicProperties() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,400)");
+
+        dqa = new DemoQAPageObjects(driver);
+        dqa.dynamicProperties().click();
+        log.info("Dynamic Properties link is clicked");
+    }
+
+    @Then("^Verify the dynamic properties of the elements$")
+    public void verifyTheDynamicPropertiesOfTheElements() throws InterruptedException {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,-400)");
+
+        Assert.assertFalse(dqa.firstButton().isEnabled());
+        log.info("First button is not enabled");
+        Assert.assertTrue(dqa.secondButton().getAttribute("class").equals("mt-4 btn btn-primary"));
+        log.info("Second button color is not changed");
+
+        Thread.sleep(6000);
+        log.info("After 5 seconds");
+
+        Assert.assertTrue(dqa.firstButton().isEnabled());
+        log.info("First button is not enabled");
+        Assert.assertTrue(dqa.secondButton().getAttribute("class").contains("danger"));
+        log.info("Second button color is changed");
+        Assert.assertTrue(dqa.thirdButton().isDisplayed());
+        log.info("Third button is displayed");
+    }
+
+    @When("^User clicks on Practice Form$")
+    public void userClicksOnPracticeForm() {
+        dqa = new DemoQAPageObjects(driver);
+        dqa.practiceForm().click();
+        log.info("Practice Form link clicked");
+    }
+
+    @And("^User fills the Practice Form$")
+    public void userFillsThePracticeForm() throws InterruptedException, IOException {
+        dqa.firstName().sendKeys("Test");
+        log.info("First Name entered");
+
+        dqa.lastName().sendKeys("User");
+        log.info("Last Name entered");
+
+        dqa.userEmail().sendKeys("testuser@gmail.com");
+        log.info("Email entered");
+
+        dqa.maleGender().click();
+        log.info("Male gender selected");
+
+        dqa.userNumber().sendKeys("1234567890");
+        log.info("Mobile Number entered");
+
+        dqa.dateOfBirth().click();
+        dqa.monthOfDOB().selectByVisibleText("March");
+        dqa.yearOfDOB().selectByValue("1991");
+        dqa.dateOfDOB().click();
+        log.info("Date of Birth entered");
+
+        dqa.subjects().sendKeys("Eng");
+        dqa.subjects().sendKeys(Keys.ENTER);
+        dqa.subjects().sendKeys("Math");
+        dqa.subjects().sendKeys(Keys.ENTER);
+        dqa.subjects().sendKeys("Computer");
+        dqa.subjects().sendKeys(Keys.ENTER);
+        log.info("Subjects entered");
+
+        dqa.hobbyOne().click();
+        dqa.hobbyThree().click();
+        log.info("Hobbies selected");
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("document.getElementById('uploadPicture').click()");
+
+        Thread.sleep(2000);
+
+        Runtime.getRuntime().exec("C://Selenium WebDriver with Java//fileuploadAutoIT.exe");
+        log.info("Auto IT script run successfully and file is uploaded");
+        Thread.sleep(2000);
+
+        js.executeScript("window.scrollBy(0,300)");
+
+        dqa.formCurrentAddress().sendKeys("123 Main St, NY");
+        log.info("Current Address Entered");
+
+        dqa.selectState().click();
+        dqa.enterState().sendKeys("Har");
+        dqa.enterState().sendKeys(Keys.ENTER);
+        log.info("State Selected");
+
+        dqa.selectCity().click();
+        dqa.enterCity().sendKeys("Pan");
+        dqa.enterCity().sendKeys(Keys.ENTER);
+        log.info("City Selected");
+    }
+
+    @And("^Clicks on Submit button$")
+    public void clicksOnSubmitButton() throws InterruptedException {
+        dqa.submitForm().click();
+        log.info("Form submitted");
+        Thread.sleep(2000);
+    }
+
+    @Then("^Verify form is successfully submitted$")
+    public void verifyFormIsSuccessfullySubmitted() {
+        Assert.assertTrue(dqa.successfulSubmit().getText().equals("Thanks for submitting the form"));
+        log.info("Submission successful");
+
+        dqa.closeSubmit().click();
+        log.info("Submission dialog closed");
+    }
+
+    @When("^User clicks on Browser Windows$")
+    public void userClicksOnBrowserWindows() {
+        dqa = new DemoQAPageObjects(driver);
+        dqa.browserWindows().click();
+        log.info("Browser Windows clicked");
+    }
+
+    @And("^User clicks on New Tab and verify the text$")
+    public void userClicksOnNewTabAndVerifyTheText() {
+        dqa.newTab().click();
+        log.info("New Tab clicked");
+
+        Set<String> ids = driver.getWindowHandles();
+        Iterator<String> id = ids.iterator();
+        String pid = id.next();
+        String newTab = id.next();
+
+        driver.switchTo().window(newTab);
+        Assert.assertTrue(dqa.newTabHeading().getText().equals("This is a sample page"));
+        log.info("Heading of new tab verified");
+        driver.close();
+
+        driver.switchTo().window(pid);
+    }
+
+    @And("^User clicks on New Window and verify the text$")
+    public void userClicksOnNewWindowAndVerifyTheText() {
+        dqa.newWindow().click();
+        log.info("New Window clicked");
+
+        Set<String> ids = driver.getWindowHandles();
+        Iterator<String> id = ids.iterator();
+        String pid = id.next();
+        String newWindow = id.next();
+
+        driver.switchTo().window(newWindow);
+        Assert.assertTrue(dqa.newWindowHeading().getText().equals("This is a sample page"));
+        log.info("Heading of new window verified");
+        driver.close();
+
+        driver.switchTo().window(pid);
+    }
+
+    @And("^User clicks on New Window Message and verify the message$")
+    public void userClicksOnNewWindowMessageAndVerifyTheMessage() {
+        dqa.newWindowMessage().click();
+        log.info("New Window Message is clicked");
+
+        Set<String> ids = driver.getWindowHandles();
+        Iterator<String> id = ids.iterator();
+        String pid = id.next();
+        String newWindowMessage = id.next();
+
+        driver.switchTo().window(newWindowMessage);
+        driver.close();
+
+        driver.switchTo().window(pid);
+    }
+
+    @When("^User clicks on Alerts$")
+    public void userClicksOnAlerts() {
+        dqa = new DemoQAPageObjects(driver);
+        dqa.alerts().click();
+        log.info("Alerts clicked");
+    }
+
+    @And("^User clicks on First Alert and verify the text$")
+    public void userClicksOnFirstAlertAndVerifyTheText() {
+        dqa.firstAlert().click();
+        log.info("First Alert clicked");
+
+        Assert.assertTrue(driver.switchTo().alert().getText().equals("You clicked a button"));
+        log.info("First Alert text verified");
+        driver.switchTo().alert().accept();
+        log.info("First Alert closed");
+    }
+
+    @And("^User clicks on Second Alert and verify the text$")
+    public void userClicksOnSecondAlertAndVerifyTheText() throws InterruptedException {
+        dqa.secondAlert().click();
+        log.info("Second Alert clicked");
+
+        Thread.sleep(5000);
+        Assert.assertTrue(driver.switchTo().alert().getText().equals("This alert appeared after 5 seconds"));
+        log.info("Second Alert text verified");
+        driver.switchTo().alert().accept();
+        log.info("Second Alert closed");
+    }
+
+    @And("^User clicks on Third Alert and verify the text$")
+    public void userClicksOnThirdAlertAndVerifyTheText() {
+        dqa.thirdAlert().click();
+        log.info("Third Alert clicked");
+
+        driver.switchTo().alert().accept();
+        log.info("Third Alert OK");
+
+        Assert.assertTrue(dqa.thirdAlertResult().getText().contains("Ok"));
+        log.info("Third Alert Result verified after OK");
+
+        dqa.thirdAlert().click();
+        log.info("Third Alert clicked");
+
+        driver.switchTo().alert().dismiss();
+        log.info("Third Alert Cancel");
+
+        Assert.assertTrue(dqa.thirdAlertResult().getText().contains("Cancel"));
+        log.info("Third Alert Result verified after Cancel");
+    }
+
+    @And("^User clicks on Fourth Alert and verify the text$")
+    public void userClicksOnFourthAlertAndVerifyTheText() {
+        dqa.fourthAlert().click();
+        log.info("Fourth Alert clicked");
+
+        driver.switchTo().alert().sendKeys("Test");
+        driver.switchTo().alert().accept();
+
+        Assert.assertTrue(dqa.fourthAlertResult().getText().contains("Test"));
+        log.info("Fourth Alert Result verified");
+    }
+
+    @When("^User clicks on Frames$")
+    public void userClicksOnFrames() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,250)");
+
+        dqa = new DemoQAPageObjects(driver);
+        dqa.frames().click();
+        log.info("Frames clicked");
+    }
+
+    @Then("^User verifies sample text in each frame$")
+    public void userVerifiesSampleTextInEachFrame() {
+        driver.switchTo().frame(dqa.frame1());
+        log.info("Switched to frame 1");
+
+        Assert.assertTrue(dqa.frame1heading().getText().equals("This is a sample page"));
+        log.info("Frame 1 heading verified");
+
+        driver.switchTo().defaultContent();
+
+        driver.switchTo().frame(dqa.frame2());
+        log.info("Switched to frame 2");
+
+        Assert.assertTrue(dqa.frame2heading().getText().equals("This is a sample page"));
+        log.info("Frame 2 heading verified");
+
+        driver.switchTo().defaultContent();
+    }
+
+    @When("^User clicks on Modal Dialogs$")
+    public void userClicksOnModalDialogs() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,250)");
+
+        dqa = new DemoQAPageObjects(driver);
+        dqa.modalDialogs().click();
+        log.info("Modal Dialogs clicked");
+    }
+
+    @And("^User clicks on Small Modal and verify the text$")
+    public void userClicksOnSmallModalAndVerifyTheText() throws InterruptedException {
+        dqa.smallModal().click();
+        log.info("Small Modal clicked");
+        Thread.sleep(2000);
+
+        Assert.assertTrue(dqa.smallModalText().getText().equals("Small Modal"));
+        log.info("Small Modal text verified");
+
+        dqa.closeSmallModal().click();
+        log.info("Small Modal closed");
+        Thread.sleep(2000);
+    }
+
+    @And("^User clicks on Large Modal and verify the text$")
+    public void userClicksOnLargeModalAndVerifyTheText() throws InterruptedException {
+        dqa.largeModal().click();
+        log.info("Large Modal clicked");
+        Thread.sleep(2000);
+
+        Assert.assertTrue(dqa.largeModalText().getText().equals("Large Modal"));
+        log.info("Large Modal text verified");
+
+        dqa.closeLargeModal().click();
+        log.info("Large Modal closed");
+    }
+
+    @When("^User clicks on Accordian$")
+    public void userClicksOnAccordian() throws InterruptedException {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,250)");
+
+        dqa = new DemoQAPageObjects(driver);
+        dqa.accordian().click();
+        log.info("Accordian clicked");
+        Thread.sleep(2000);
+    }
+
+    @And("^User clicks any tab$")
+    public void userClicksAnyTab() throws InterruptedException {
+        dqa.accordianHeading().click();
+        log.info("Accordian heading clicked");
+        Thread.sleep(2000);
+    }
+
+    @Then("^Appropriate text should be displayed$")
+    public void appropriateTextShouldBeDisplayed() {
+        Assert.assertTrue(dqa.accordianContent().getAttribute("class").contains("show"));
+        log.info("Accordian content showed and verified");
     }
 }

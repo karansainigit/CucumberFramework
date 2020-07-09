@@ -62,3 +62,54 @@ Feature: Verify Demo QA Website
     When User clicks on Upload and Download
     And User clicks on Choose File link and selects file to be uploaded
     Then Verify file is uploaded successfully
+
+  @Demo
+  Scenario: Verify Dynamic Properties functionality
+    Given User navigates to "https://demoqa.com/elements" website
+    When User clicks on Dynamic Properties
+    Then Verify the dynamic properties of the elements
+
+  @Demo
+  Scenario: Verify Practice Form functionality
+    Given User navigates to "https://demoqa.com/forms" website
+    When User clicks on Practice Form
+    And User fills the Practice Form
+    And Clicks on Submit button
+    Then Verify form is successfully submitted
+
+  @Demo
+  Scenario: Verify Browser Windows functionality
+    Given User navigates to "https://demoqa.com/alertsWindows" website
+    When User clicks on Browser Windows
+    And User clicks on New Tab and verify the text
+    And User clicks on New Window and verify the text
+    And User clicks on New Window Message and verify the message
+
+  @Demo
+  Scenario: Verify Alerts functionality
+    Given User navigates to "https://demoqa.com/alertsWindows" website
+    When User clicks on Alerts
+    And User clicks on First Alert and verify the text
+    And User clicks on Second Alert and verify the text
+    And User clicks on Third Alert and verify the text
+    And User clicks on Fourth Alert and verify the text
+
+  @Demo
+  Scenario: Verify Frames functionality
+    Given User navigates to "https://demoqa.com/alertsWindows" website
+    When User clicks on Frames
+    Then User verifies sample text in each frame
+
+  @Demo
+  Scenario: Verify Modal Dialogs functionality
+    Given User navigates to "https://demoqa.com/alertsWindows" website
+    When User clicks on Modal Dialogs
+    And User clicks on Small Modal and verify the text
+    And User clicks on Large Modal and verify the text
+
+  @Demo
+  Scenario: Verify Accordian functionality
+    Given User navigates to "https://demoqa.com/widgets" website
+    When User clicks on Accordian
+    And User clicks any tab
+    Then Appropriate text should be displayed

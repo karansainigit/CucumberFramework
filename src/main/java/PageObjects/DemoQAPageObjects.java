@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
@@ -281,4 +282,378 @@ public class DemoQAPageObjects {
     public WebElement uploadedFilePath() {
         return uploadedFilePath;
     }
+
+    @FindBy(xpath = "//span[text()='Dynamic Properties']")
+    private WebElement dynamicProperties;
+
+    public WebElement dynamicProperties() {
+        return dynamicProperties;
+    }
+
+    @FindBy(id = "enableAfter")
+    private WebElement firstButton;
+
+    public WebElement firstButton() {
+        return firstButton;
+    }
+
+    @FindBy(id = "colorChange")
+    private WebElement secondButton;
+
+    public WebElement secondButton() {
+        return secondButton;
+    }
+
+    @FindBy(id = "visibleAfter")
+    private WebElement thirdButton;
+
+    public WebElement thirdButton() {
+        return thirdButton;
+    }
+
+    @FindBy(xpath = "//span[text()='Practice Form']")
+    private WebElement practiceForm;
+
+    public WebElement practiceForm() {
+        return practiceForm;
+    }
+
+    @FindBy(id = "firstName")
+    private WebElement firstName;
+
+    public WebElement firstName() {
+        return firstName;
+    }
+
+    @FindBy(id = "lastName")
+    private WebElement lastName;
+
+    public WebElement lastName() {
+        return lastName;
+    }
+
+    @FindBy(id = "userEmail")
+    private WebElement userEmail;
+
+    public WebElement userEmail() {
+        return userEmail;
+    }
+
+    @FindBy(xpath = "//label[@for='gender-radio-1']")
+    private WebElement maleGender;
+
+    public WebElement maleGender() {
+        return maleGender;
+    }
+
+    @FindBy(id = "userNumber")
+    private WebElement userNumber;
+
+    public WebElement userNumber() {
+        return userNumber;
+    }
+
+    @FindBy(id = "dateOfBirthInput")
+    private WebElement dateOfBirth;
+
+    public WebElement dateOfBirth() {
+        return dateOfBirth;
+    }
+
+    @FindBy(xpath = "//select[@class='react-datepicker__month-select']")
+    private WebElement monthOfDOB;
+
+    public Select monthOfDOB() {
+        Select month = new Select(monthOfDOB);
+        return month;
+    }
+
+    @FindBy(xpath = "//select[@class='react-datepicker__year-select']")
+    private WebElement yearOfDOB;
+
+    public Select yearOfDOB() {
+        Select year = new Select(yearOfDOB);
+        return year;
+    }
+
+    @FindBy(xpath = "//div[@class='react-datepicker__month'] //div[text()='21']")
+    private WebElement dateOfDOB;
+
+    public WebElement dateOfDOB() {
+        return dateOfDOB;
+    }
+
+    @FindBy(id = "subjectsInput")
+    private WebElement subjects;
+
+    public WebElement subjects() {
+        return subjects;
+    }
+
+    @FindBy(xpath = "//label[@for='hobbies-checkbox-1']")
+    private WebElement hobbyOne;
+
+    public WebElement hobbyOne() {
+        return hobbyOne;
+    }
+
+    @FindBy(xpath = "//label[@for='hobbies-checkbox-3']")
+    private WebElement hobbyThree;
+
+    public WebElement hobbyThree() {
+        return hobbyThree;
+    }
+
+    @FindBy(id = "currentAddress")
+    private WebElement formCurrentAddress;
+
+    public WebElement formCurrentAddress() {
+        return formCurrentAddress;
+    }
+
+    @FindBy(xpath = "//div[text()='Select State']")
+    private WebElement selectState;
+
+    public WebElement selectState() {
+        return selectState;
+    }
+
+    @FindBy(css = "#react-select-3-input")
+    private WebElement enterState;
+
+    public WebElement enterState() {
+        return enterState;
+    }
+
+    @FindBy(xpath = "//div[text()='Select City']")
+    private WebElement selectCity;
+
+    public WebElement selectCity() {
+        return selectCity;
+    }
+
+    @FindBy(css = "#react-select-4-input")
+    private WebElement enterCity;
+
+    public WebElement enterCity() {
+        return enterCity;
+    }
+
+    @FindBy(css = "#submit")
+    private WebElement submitForm;
+
+    public WebElement submitForm() {
+        return submitForm;
+    }
+
+    @FindBy(xpath = "//div[@class='modal-header']/div")
+    private WebElement successfulSubmit;
+
+    public WebElement successfulSubmit() {
+        return successfulSubmit;
+    }
+
+    @FindBy(css = "#closeLargeModal")
+    private WebElement closeSubmit;
+
+    public WebElement closeSubmit() {
+        return closeSubmit;
+    }
+
+    @FindBy(xpath = "//span[text()='Browser Windows']")
+    private WebElement browserWindows;
+
+    public WebElement browserWindows() {
+        return browserWindows;
+    }
+
+    @FindBy(css = "#tabButton")
+    private WebElement newTab;
+
+    public WebElement newTab() {
+        return newTab;
+    }
+
+    @FindBy(id = "sampleHeading")
+    private WebElement newTabHeading;
+
+    public WebElement newTabHeading() {
+        return newTabHeading;
+    }
+
+    @FindBy(id = "windowButton")
+    private WebElement newWindow;
+
+    public WebElement newWindow() {
+        return newWindow;
+    }
+
+    @FindBy(id = "sampleHeading")
+    private WebElement newWindowHeading;
+
+    public WebElement newWindowHeading() {
+        return newWindowHeading;
+    }
+
+    @FindBy(id = "messageWindowButton")
+    private WebElement newWindowMessage;
+
+    public WebElement newWindowMessage() {
+        return newWindowMessage;
+    }
+
+    @FindBy(xpath = "//span[text()='Alerts']")
+    private WebElement alerts;
+
+    public WebElement alerts() {
+        return alerts;
+    }
+
+    @FindBy(css = "#alertButton")
+    private WebElement firstAlert;
+
+    public WebElement firstAlert() {
+        return firstAlert;
+    }
+
+    @FindBy(css = "#timerAlertButton")
+    private WebElement secondAlert;
+
+    public WebElement secondAlert() {
+        return secondAlert;
+    }
+
+    @FindBy(css = "#confirmButton")
+    private WebElement thirdAlert;
+
+    public WebElement thirdAlert() {
+        return thirdAlert;
+    }
+
+    @FindBy(id = "confirmResult")
+    private WebElement thirdAlertResult;
+
+    public WebElement thirdAlertResult() {
+        return thirdAlertResult;
+    }
+
+    @FindBy(css = "#promtButton")
+    private WebElement fourthAlert;
+
+    public WebElement fourthAlert() {
+        return fourthAlert;
+    }
+
+    @FindBy(id = "promptResult")
+    private WebElement fourthAlertResult;
+
+    public WebElement fourthAlertResult() {
+        return fourthAlertResult;
+    }
+
+    @FindBy(xpath = "//span[text()='Frames']")
+    private WebElement frames;
+
+    public WebElement frames() {
+        return frames;
+    }
+
+    @FindBy(xpath = "//iframe[@id='frame1']")
+    private WebElement frame1;
+
+    public WebElement frame1() {
+        return frame1;
+    }
+
+    @FindBy(id = "sampleHeading")
+    private WebElement frame1heading;
+
+    public WebElement frame1heading() {
+        return frame1heading;
+    }
+
+    @FindBy(xpath = "//iframe[@id='frame2']")
+    private WebElement frame2;
+
+    public WebElement frame2() {
+        return frame2;
+    }
+
+    @FindBy(id = "sampleHeading")
+    private WebElement frame2heading;
+
+    public WebElement frame2heading() {
+        return frame2heading;
+    }
+
+    @FindBy(xpath = "//span[text()='Modal Dialogs']")
+    private WebElement modalDialogs;
+
+    public WebElement modalDialogs() {
+        return modalDialogs;
+    }
+
+    @FindBy(id = "showSmallModal")
+    private WebElement smallModal;
+
+    public WebElement smallModal() {
+        return smallModal;
+    }
+
+    @FindBy(id = "showLargeModal")
+    private WebElement largeModal;
+
+    public WebElement largeModal() {
+        return largeModal;
+    }
+
+    @FindBy(xpath = "//div[@class='modal-header']/div")
+    private WebElement smallModalText;
+
+    public WebElement smallModalText() {
+        return smallModalText;
+    }
+
+    @FindBy(css = "#closeSmallModal")
+    private WebElement closeSmallModal;
+
+    public WebElement closeSmallModal() {
+        return closeSmallModal;
+    }
+
+    @FindBy(xpath = "//div[@class='modal-header']/div")
+    private WebElement largeModalText;
+
+    public WebElement largeModalText() {
+        return largeModalText;
+    }
+
+    @FindBy(css = "#closeLargeModal")
+    private WebElement closeLargeModal;
+
+    public WebElement closeLargeModal() {
+        return closeLargeModal;
+    }
+
+    @FindBy(xpath = "//span[text()='Accordian']")
+    private WebElement accordian;
+
+    public WebElement accordian() {
+        return accordian;
+    }
+
+    @FindBy(id = "section2Heading")
+    private WebElement accordianHeading;
+
+    public WebElement accordianHeading() {
+        return accordianHeading;
+    }
+
+    @FindBy(xpath = "//*[@id='section2Content']/parent::div")
+    private WebElement accordianContent;
+
+    public WebElement accordianContent() {
+        return accordianContent;
+    }
+
 }

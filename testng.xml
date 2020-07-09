@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="All Test Suite" parallel="tests" thread-count="4">
     <test verbose="2" preserve-order="true" name="Test Case">
         <classes>
             <class name="CucumberOptions.TestRunner"/>
+            <class name="Cucumber.DemoRest"/>
+            <class name="Cucumber.DemoRestDELETE"/>
+            <class name="Cucumber.DemoRestGET"/>
+            <class name="Cucumber.DemoRestPOST"/>
+            <class name="Cucumber.DemoRestPUT"/>
         </classes>
     </test>
 </suite>
