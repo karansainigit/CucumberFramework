@@ -134,4 +134,151 @@ public class DemoQAPageObjects {
     public List<WebElement> firstNameColumn() {
         return firstNameColumn;
     }
+
+    @FindBy(xpath = "//span[text()='Buttons']")
+    private WebElement buttons;
+
+    public WebElement buttons() {
+        return buttons;
+    }
+
+    @FindBy(id = "doubleClickBtn")
+    private WebElement doubleClickButton;
+
+    public WebElement doubleClickButton() {
+        return doubleClickButton;
+    }
+
+    @FindBy(id = "rightClickBtn")
+    private WebElement rightClickButton;
+
+    public WebElement rightClickButton() {
+        return rightClickButton;
+    }
+
+    @FindBy(xpath = "//button[text()='Click Me']")
+    private WebElement clickButton;
+
+    public WebElement clickButton() {
+        return clickButton;
+    }
+
+    @FindBy(id = "doubleClickMessage")
+    private WebElement doubleClickMessage;
+
+    public WebElement doubleClickMessage() {
+        return doubleClickMessage;
+    }
+
+    @FindBy(id = "rightClickMessage")
+    private WebElement rightClickMessage;
+
+    public WebElement rightClickMessage() {
+        return rightClickMessage;
+    }
+
+    @FindBy(id = "dynamicClickMessage")
+    private WebElement dynamicClickMessage;
+
+    public WebElement dynamicClickMessage() {
+        return dynamicClickMessage;
+    }
+
+    @FindBy(xpath = "//span[text()='Links']")
+    private WebElement links;
+
+    public WebElement links() {
+        return links;
+    }
+
+    @FindBy(id = "created")
+    private WebElement createdLink;
+
+    public WebElement createdLink() {
+        return createdLink;
+    }
+
+    @FindBy(id = "no-content")
+    private WebElement noContentLink;
+
+    public WebElement noContentLink() {
+        return noContentLink;
+    }
+
+    @FindBy(id = "moved")
+    private WebElement movedLink;
+
+    public WebElement movedLink() {
+        return movedLink;
+    }
+
+    @FindBy(id = "bad-request")
+    private WebElement badRequestLink;
+
+    public WebElement badRequestLink() {
+        return badRequestLink;
+    }
+
+    @FindBy(id = "unauthorized")
+    private WebElement unauthorizedLink;
+
+    public WebElement unauthorizedLink() {
+        return unauthorizedLink;
+    }
+
+    @FindBy(id = "forbidden")
+    private WebElement forbiddenLink;
+
+    public WebElement forbiddenLink() {
+        return forbiddenLink;
+    }
+
+    @FindBy(id = "invalid-url")
+    private WebElement notFoundLink;
+
+    public WebElement notFoundLink() {
+        return notFoundLink;
+    }
+
+    @FindBy(id = "linkResponse")
+    private WebElement linkResponseMessage;
+
+    public WebElement linkResponseMessage() {
+        return linkResponseMessage;
+    }
+
+    @FindBy(id = "simpleLink")
+    private WebElement homeLink;
+
+    public WebElement homeLink() {
+        return homeLink;
+    }
+
+    @FindBy(id = "dynamicLink")
+    private WebElement homeHkWJsLink;
+
+    public WebElement homeHkWJsLink() {
+        return homeHkWJsLink;
+    }
+
+    @FindBy(xpath = "//span[text()='Upload and Download']")
+    private WebElement uploadAndDownload;
+
+    public WebElement uploadAndDownload() {
+        return uploadAndDownload;
+    }
+
+    @FindBy(id = "downloadButton")
+    private WebElement downloadLink;
+
+    public WebElement downloadLink() {
+        return downloadLink;
+    }
+
+    @FindBy(id = "uploadedFilePath")
+    private WebElement uploadedFilePath;
+
+    public WebElement uploadedFilePath() {
+        return uploadedFilePath;
+    }
 }

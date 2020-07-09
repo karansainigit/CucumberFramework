@@ -75,7 +75,7 @@ public class MobileBrowserPageObjects {
         return enterToCity;
     }
 
-    @FindBy(id = "selectDate")
+    @FindBy(xpath = "//span[@data-cy='departureMonthAndYear']")
     private WebElement departureDate;
 
     public WebElement departureDate() {

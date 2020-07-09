@@ -11,12 +11,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
+import java.util.HashMap;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -36,7 +38,17 @@ public class Base {
 
         if(browserName.contains("chrome")) {
             System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "//src//main//java//Resources//chromedriver.exe");
+
+            HashMap<String,Object> chromePrefs = new HashMap<String,Object>();
+            chromePrefs.put("profile.default_content_settings.popups", 0);
+            chromePrefs.put("download.default_directory", System.getProperty("user.dir"));
+            DesiredCapabilities dc = DesiredCapabilities.chrome();
+            dc.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,true);
+            dc.setCapability(CapabilityType.ACCEPT_SSL_CERTS,true);
             ChromeOptions options = new ChromeOptions();
+            options.merge(dc);
+            options.setExperimentalOption("prefs",chromePrefs);
+
             if (browserName.contains("headless")) {
                 options.addArguments("headless");
             }
