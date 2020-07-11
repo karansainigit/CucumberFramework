@@ -208,37 +208,37 @@ public class DemoQAStepDefinition extends Base {
     public void userClicksOnAllTheLinksThatWillSendAPICall() throws InterruptedException {
         dqa.createdLink().click();
         log.info("Created Link is clicked");
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         createdLinkMessage = dqa.linkResponseMessage().getText();
 
         dqa.noContentLink().click();
         log.info("No Content Link is clicked");
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         noContentLinkMessage = dqa.linkResponseMessage().getText();
 
         dqa.movedLink().click();
         log.info("Moved Link is clicked");
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         movedLinkMessage = dqa.linkResponseMessage().getText();
 
         dqa.badRequestLink().click();
         log.info("Bad Request Link is clicked");
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         badRequestLinkMessage = dqa.linkResponseMessage().getText();
 
         dqa.unauthorizedLink().click();
         log.info("Unauthorized Link is clicked");
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         unauthorizedLinkMessage = dqa.linkResponseMessage().getText();
 
         dqa.forbiddenLink().click();
         log.info("Forbidden Link is clicked");
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         forbiddenLinkMessage = dqa.linkResponseMessage().getText();
 
         dqa.notFoundLink().click();
         log.info("Not Found Link is clicked");
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         notFoundLinkMessage = dqa.linkResponseMessage().getText();
 
     }
@@ -630,13 +630,14 @@ public class DemoQAStepDefinition extends Base {
     }
 
     @When("^User clicks on Modal Dialogs$")
-    public void userClicksOnModalDialogs() {
+    public void userClicksOnModalDialogs() throws InterruptedException {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,250)");
 
         dqa = new DemoQAPageObjects(driver);
         dqa.modalDialogs().click();
         log.info("Modal Dialogs clicked");
+        Thread.sleep(2000);
     }
 
     @And("^User clicks on Small Modal and verify the text$")
@@ -688,5 +689,121 @@ public class DemoQAStepDefinition extends Base {
     public void appropriateTextShouldBeDisplayed() {
         Assert.assertTrue(dqa.accordianContent().getAttribute("class").contains("show"));
         log.info("Accordian content showed and verified");
+    }
+
+    @When("^User clicks on Auto Complete$")
+    public void userClicksOnAutoComplete() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,300)");
+
+        dqa = new DemoQAPageObjects(driver);
+        dqa.autoComplete().click();
+        log.info("Auto Complete clicked");
+    }
+
+    @And("^User enters colors \"([^\"]*)\" , \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void userEntersColorsAnd(String red, String black, String purple) throws Throwable {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,-300)");
+
+        dqa.multipleColors().sendKeys(red);
+        dqa.multipleColors().sendKeys(Keys.ENTER);
+        log.info("Red Color Selected");
+
+        dqa.multipleColors().sendKeys(black);
+        dqa.multipleColors().sendKeys(Keys.ENTER);
+        log.info("Black Color Selected");
+
+        dqa.singleColor().sendKeys(purple);
+        dqa.singleColor().sendKeys(Keys.ENTER);
+        log.info("Purple Color Selected");
+    }
+
+    @Then("^Appropriate color should be selected$")
+    public void appropriateColorShouldBeSelected() {
+        ArrayList<String> colorsSelected = new ArrayList<String>();
+
+        for (int i = 0; i < dqa.multipleColorsSelected().size(); i++) {
+            colorsSelected.add(dqa.multipleColorsSelected().get(i).getText());
+        }
+
+        Assert.assertTrue(colorsSelected.contains("Red"));
+        Assert.assertTrue(colorsSelected.contains("Black"));
+        log.info("Multiple Colors Selected are verified");
+
+        Assert.assertEquals(dqa.singleColorsSelected().getText(),"Purple");
+        log.info("Single Color selected is verified");
+    }
+
+    @When("^User clicks on Date Picker$")
+    public void userClicksOnDatePicker() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,300)");
+
+        dqa = new DemoQAPageObjects(driver);
+        dqa.datePicker().click();
+        log.info("Date Picker clicked");
+    }
+
+    @And("^User selects Date \"([^\"]*)\" Month \"([^\"]*)\" and Year \"([^\"]*)\"$")
+    public void userSelectsDateMonthAndYear(String date, String month, String year) throws Throwable {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,-300)");
+
+        dqa.selectDate().click();
+        log.info("Select Date opened");
+
+        dqa.selectMonth().selectByVisibleText(month);
+        log.info("Month Selected");
+
+        dqa.selectYear().selectByValue(year);
+        log.info("Year Selected");
+
+        for(int i = 0; i < dqa.selectDay().size(); i++) {
+            if (dqa.selectDay().get(i).getText().equals(date)) {
+                dqa.selectDay().get(i).click();
+            }
+        }
+        log.info("Date Selected");
+    }
+
+    @And("^User enters Month \"([^\"]*)\" Date \"([^\"]*)\" and Time \"([^\"]*)\"$")
+    public void userEntersMonthDateAndTime(String month, String date, String time) throws Throwable {
+        dqa.selectDateAndTime().click();
+        log.info("Select Date and Time opened");
+
+        int i = 1;
+        while(i > 0) {
+            if (!dqa.selectedMonth().getText().equals(month)) {
+                dqa.nextMonth().click();
+            }
+            if (dqa.selectedMonth().getText().equals(month)) {
+                break;
+            }
+        }
+        log.info("Month Selected");
+
+        for(int j = 0; j < dqa.selectDateAndTimeDay().size(); j++) {
+            if (dqa.selectDateAndTimeDay().get(j).getText().equals(date)) {
+                dqa.selectDateAndTimeDay().get(j).click();
+            }
+        }
+        log.info("Date Selected");
+
+        for(int k = 0; k < dqa.selectTime().size(); k++) {
+            if (dqa.selectTime().get(k).getText().equals(time)) {
+                dqa.selectTime().get(k).click();
+            }
+        }
+        log.info("Time Selected");
+    }
+
+    @Then("^Selected Date \"([^\"]*)\" and entered Date and Time \"([^\"]*)\" should be displayed$")
+    public void selectedDateAndEnteredDateAndTimeShouldBeDisplayed(String selectDate, String dateAndTime) throws Throwable {
+        Assert.assertTrue(dqa.selectDate().getAttribute("value").equals(selectDate));
+        log.info("Select Date verified");
+
+        Assert.assertTrue(dqa.selectDateAndTime().getAttribute("value").equals(dateAndTime));
+        log.info("Date and Time verified");
     }
 }

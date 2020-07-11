@@ -113,3 +113,18 @@ Feature: Verify Demo QA Website
     When User clicks on Accordian
     And User clicks any tab
     Then Appropriate text should be displayed
+
+  @Demo
+  Scenario: Verify Auto Complete functionality
+    Given User navigates to "https://demoqa.com/widgets" website
+    When User clicks on Auto Complete
+    And User enters colors "Red" , "Black" and "Purple"
+    Then Appropriate color should be selected
+
+  @Demo
+  Scenario: Verify Date Picker functionality
+    Given User navigates to "https://demoqa.com/widgets" website
+    When User clicks on Date Picker
+    And User selects Date "21" Month "June" and Year "2021"
+    And User enters Month "December" Date "25" and Time "20:00"
+    Then Selected Date "06/21/2021" and entered Date and Time "December 25, 2020 8:00 PM" should be displayed

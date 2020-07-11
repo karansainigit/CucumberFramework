@@ -656,4 +656,110 @@ public class DemoQAPageObjects {
         return accordianContent;
     }
 
+    @FindBy(xpath = "//span[text()='Auto Complete']")
+    private WebElement autoComplete;
+
+    public WebElement autoComplete() {
+        return autoComplete;
+    }
+
+    @FindBy(css = "#autoCompleteMultipleInput")
+    private WebElement multipleColors;
+
+    public WebElement multipleColors() {
+        return multipleColors;
+    }
+
+    @FindBy(css = "#autoCompleteSingleInput")
+    private WebElement singleColor;
+
+    public WebElement singleColor() {
+        return singleColor;
+    }
+
+    @FindBy(xpath = "//div[contains(@class,'auto-complete__multi-value__label')]")
+    private List<WebElement> multipleColorsSelected;
+
+    public List<WebElement> multipleColorsSelected() {
+        return multipleColorsSelected;
+    }
+
+    @FindBy(xpath = "//div[contains(@class,'singleValue')]")
+    private WebElement singleColorsSelected;
+
+    public WebElement singleColorsSelected() {
+        return singleColorsSelected;
+    }
+
+    @FindBy(xpath = "//span[text()='Date Picker']")
+    private WebElement datePicker;
+
+    public WebElement datePicker() {
+        return datePicker;
+    }
+
+    @FindBy(id = "datePickerMonthYearInput")
+    private WebElement selectDate;
+
+    public WebElement selectDate() {
+        return selectDate;
+    }
+
+    @FindBy(xpath = "//div[@class='react-datepicker__week']/div")
+    private List<WebElement> selectDay;
+
+    public List<WebElement> selectDay() {
+        return selectDay;
+    }
+
+    @FindBy(xpath = "//select[@class='react-datepicker__month-select']")
+    private WebElement selectMonth;
+
+    public Select selectMonth() {
+        Select month = new Select(selectMonth);
+        return month;
+    }
+
+    @FindBy(xpath = "//select[@class='react-datepicker__year-select']")
+    private WebElement selectYear;
+
+    public Select selectYear() {
+        Select year = new Select(selectYear);
+        return year;
+    }
+
+    @FindBy(id = "dateAndTimePickerInput")
+    private WebElement selectDateAndTime;
+
+    public WebElement selectDateAndTime() {
+        return selectDateAndTime;
+    }
+
+    @FindBy(xpath = "//span[contains(@class,'selected-month')]")
+    private WebElement selectedMonth;
+
+    public WebElement selectedMonth() {
+        return selectedMonth;
+    }
+
+    @FindBy(xpath = "//button[@aria-label='Next Month']")
+    private WebElement nextMonth;
+
+    public WebElement nextMonth() {
+        return nextMonth;
+    }
+
+    @FindBy(xpath = "//div[@class='react-datepicker__week']/div")
+    private List<WebElement> selectDateAndTimeDay;
+
+    public List<WebElement> selectDateAndTimeDay() {
+        return selectDateAndTimeDay;
+    }
+
+    @FindBy(xpath = "//ul[@class='react-datepicker__time-list']/li")
+    private List<WebElement> selectTime;
+
+    public List<WebElement> selectTime() {
+        return selectTime;
+    }
 }

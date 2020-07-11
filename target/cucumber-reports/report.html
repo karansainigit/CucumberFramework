@@ -34,6 +34,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -47,7 +48,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 8, 2020 10:57:34 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 10, 2020 06:01:04 PM</span>
 				</a>
 			</li>
 			<li>
@@ -73,6 +74,8 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -139,10 +142,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>5</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='60%'><span class='strong'>3</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='40%'>2</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -154,10 +157,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>21</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='92.593%'><span class='strong'>25</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='7.407%'>2</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -169,10 +172,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>82</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='96.296%'><span class='strong'>104</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='1.852%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='1.852%'>2</span> others
 				</div>
 			</div>
 		</div>
@@ -189,7 +192,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Mobile Test Cases</span>
-						<span class='test-time'>Jul 8, 2020 10:57:34 PM</span>
+						<span class='test-time'>Jul 10, 2020 06:01:04 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -198,7 +201,7 @@
 		<span class='category label white-text'>@Mobile</span>
 		<span class='category label white-text'>@Animation</span>
 	</div>
-	<span class='duration right label'>0h 0m 16s+985ms</span>
+	<span class='duration right label'>0h 0m 21s+279ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Bouncing Balls in APIDemos apk - Animation</span>
@@ -235,7 +238,7 @@
 		<span class='category label white-text'>@Mobile</span>
 		<span class='category label white-text'>@App</span>
 	</div>
-	<span class='duration right label'>0h 0m 19s+375ms</span>
+	<span class='duration right label'>0h 0m 20s+348ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Alert Dialogs-Single choice list in APIDemos - App</span>
@@ -280,7 +283,7 @@
 		<span class='category label white-text'>@Mobile</span>
 		<span class='category label white-text'>@App</span>
 	</div>
-	<span class='duration right label'>0h 0m 22s+633ms</span>
+	<span class='duration right label'>0h 0m 22s+822ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Alert Dialogs-Ultra long message in APIDemos - App</span>
@@ -321,7 +324,7 @@
 	</ul>
 </div>
 <div class='scenariooutline node' test-id='16' status='pass'>
-	<span class='duration right label'>0h 0m 39s+111ms</span>
+	<span class='duration right label'>0h 0m 37s+647ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">Verify Alert Dialogs-Text Entry dialog in APIDemos - App</span>
@@ -391,18 +394,18 @@
 				</li>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='27'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='27'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify MakeMyTrip on Mobile Browser</span>
-						<span class='test-time'>Jul 8, 2020 10:59:15 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Jul 10, 2020 06:02:49 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='28' status='pass'>
+<div class='scenario node' test-id='28' status='fail'>
 	<div class='category-list'>
 		<span class='category label white-text'>@MobileBrowser</span>
 	</div>
-	<span class='duration right label'>0h 0m 54s+879ms</span>
+	<span class='duration right label'>0h 0m 51s+885ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">One Way trip search</span>
@@ -416,28 +419,126 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='30' class='node when pass' status='pass'>
+		<li test-id='30' class='node when fail' status='fail'>
 			
 			<b>When</b>
 			
 			<span class="bdd-step-name">When User clicks on One Way search</span>
-				<div class='pre'>passed</div>
+				<div class='pre'><textarea>org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.xpath: //li[@data-cy='oneWayTrip']
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
+	at StepDefinitions.MobileBrowserStepDefinition.userClicksOnOneWaySearch(MobileBrowserStepDefinition.java:85)
+	at ?.When User clicks on One Way search(VerifyBrowserOnMobile.feature:6)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@1b2d7c3e (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
+	at StepDefinitions.MobileBrowserStepDefinition.userClicksOnOneWaySearch(MobileBrowserStepDefinition.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@data-cy='oneWayTrip']"}
+  (Session info: chrome=83.0.4099.5)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-EDS2GI91', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, databaseEnabled: false, desired: {browserName: Chrome, deviceName: PIXEL 2 API R, platformName: android}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: sdk_gphone_x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 569b0a6d-bec9-469e-a6fa-7a7f20575970
+*** Element info: {Using=xpath, value=//li[@data-cy='oneWayTrip']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 44 more
+</textarea></div>
 			
 		</li>
-		<li test-id='31' class='node and pass' status='pass'>
+		<li test-id='31' class='node and skip' status='skip'>
 			
 			<b>And</b>
 			
 			<span class="bdd-step-name">And User Enter From "delhi" and To "goa" city</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>skipped</div>
 			
 		</li>
-		<li test-id='32' class='node and pass' status='pass'>
+		<li test-id='32' class='node and skip' status='skip'>
 			
 			<b>And</b>
 			
 			<span class="bdd-step-name">And User selects Date of travel</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>skipped</div>
 			
 		</li>
 	</ul>
@@ -446,18 +547,18 @@
 				</li>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='33'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='33'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Demo QA Website</span>
-						<span class='test-time'>Jul 8, 2020 11:00:16 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Jul 10, 2020 06:03:46 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='34' status='pass'>
 	<div class='category-list'>
 		<span class='category label white-text'>@Demo</span>
 	</div>
-	<span class='duration right label'>0h 0m 9s+845ms</span>
+	<span class='duration right label'>0h 0m 9s+981ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Text Box functionality</span>
@@ -501,7 +602,7 @@
 	<div class='category-list'>
 		<span class='category label white-text'>@Demo</span>
 	</div>
-	<span class='duration right label'>0h 0m 9s+922ms</span>
+	<span class='duration right label'>0h 0m 9s+195ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Check Box functionality</span>
@@ -545,7 +646,7 @@
 	<div class='category-list'>
 		<span class='category label white-text'>@Demo</span>
 	</div>
-	<span class='duration right label'>0h 0m 8s+877ms</span>
+	<span class='duration right label'>0h 0m 10s+204ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Radio Button functionality</span>
@@ -589,7 +690,7 @@
 	<div class='category-list'>
 		<span class='category label white-text'>@Demo</span>
 	</div>
-	<span class='duration right label'>0h 0m 10s+390ms</span>
+	<span class='duration right label'>0h 0m 9s+214ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Web Tables functionality</span>
@@ -633,7 +734,7 @@
 	<div class='category-list'>
 		<span class='category label white-text'>@Demo</span>
 	</div>
-	<span class='duration right label'>0h 0m 9s+290ms</span>
+	<span class='duration right label'>0h 0m 10s+720ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Buttons functionality</span>
@@ -673,11 +774,11 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='59' status='pass'>
+<div class='scenario node' test-id='59' status='fail'>
 	<div class='category-list'>
 		<span class='category label white-text'>@Demo</span>
 	</div>
-	<span class='duration right label'>0h 0m 23s+366ms</span>
+	<span class='duration right label'>0h 0m 23s+545ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify API Links functionality</span>
@@ -707,12 +808,19 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='63' class='node then pass' status='pass'>
+		<li test-id='63' class='node then fail' status='fail'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then Verify correct call is being made</span>
-				<div class='pre'>passed</div>
+				<div class='pre'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at StepDefinitions.DemoQAStepDefinition.verifyCorrectCallIsBeingMade(DemoQAStepDefinition.java:272)
+	at ?.Then Verify correct call is being made(VerifyDemoQA.feature:43)
+</pre></div>
 			
 		</li>
 	</ul>
@@ -721,7 +829,7 @@
 	<div class='category-list'>
 		<span class='category label white-text'>@Demo</span>
 	</div>
-	<span class='duration right label'>0h 0m 14s+306ms</span>
+	<span class='duration right label'>0h 0m 13s+814ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify New Tab Links functionality</span>
@@ -765,7 +873,7 @@
 	<div class='category-list'>
 		<span class='category label white-text'>@Demo</span>
 	</div>
-	<span class='duration right label'>0h 0m 14s+454ms</span>
+	<span class='duration right label'>0h 0m 14s+683ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Download functionality</span>
@@ -809,7 +917,7 @@
 	<div class='category-list'>
 		<span class='category label white-text'>@Demo</span>
 	</div>
-	<span class='duration right label'>0h 0m 17s+376ms</span>
+	<span class='duration right label'>0h 0m 17s+107ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Upload functionality</span>
@@ -853,7 +961,7 @@
 	<div class='category-list'>
 		<span class='category label white-text'>@Demo</span>
 	</div>
-	<span class='duration right label'>0h 0m 15s+665ms</span>
+	<span class='duration right label'>0h 0m 15s+136ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Dynamic Properties functionality</span>
@@ -889,7 +997,7 @@
 	<div class='category-list'>
 		<span class='category label white-text'>@Demo</span>
 	</div>
-	<span class='duration right label'>0h 0m 19s+609ms</span>
+	<span class='duration right label'>0h 0m 19s+899ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Practice Form functionality</span>
@@ -941,7 +1049,7 @@
 	<div class='category-list'>
 		<span class='category label white-text'>@Demo</span>
 	</div>
-	<span class='duration right label'>0h 0m 15s+619ms</span>
+	<span class='duration right label'>0h 0m 17s+71ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Browser Windows functionality</span>
@@ -989,28 +1097,308 @@
 		</li>
 	</ul>
 </div>
+<div class='scenario node' test-id='95' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@Demo</span>
+	</div>
+	<span class='duration right label'>0h 0m 15s+965ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify Alerts functionality</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='96' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigates to "https://demoqa.com/alertsWindows" website</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='97' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Alerts</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='98' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on First Alert and verify the text</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='99' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Second Alert and verify the text</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='100' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Third Alert and verify the text</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='101' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Fourth Alert and verify the text</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='102' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@Demo</span>
+	</div>
+	<span class='duration right label'>0h 0m 10s+316ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify Frames functionality</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='103' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigates to "https://demoqa.com/alertsWindows" website</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='104' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Frames</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='105' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User verifies sample text in each frame</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='106' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@Demo</span>
+	</div>
+	<span class='duration right label'>0h 0m 19s+84ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify Modal Dialogs functionality</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='107' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigates to "https://demoqa.com/alertsWindows" website</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='108' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Modal Dialogs</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='109' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Small Modal and verify the text</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='110' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Large Modal and verify the text</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='111' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@Demo</span>
+	</div>
+	<span class='duration right label'>0h 0m 13s+861ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify Accordian functionality</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='112' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigates to "https://demoqa.com/widgets" website</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='113' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Accordian</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='114' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks any tab</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='115' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Appropriate text should be displayed</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='116' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@Demo</span>
+	</div>
+	<span class='duration right label'>0h 0m 9s+864ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify Auto Complete functionality</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='117' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigates to "https://demoqa.com/widgets" website</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='118' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Auto Complete</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='119' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters colors "Red" , "Black" and "Purple"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='120' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Appropriate color should be selected</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='121' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@Demo</span>
+	</div>
+	<span class='duration right label'>0h 0m 39s+913ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify Date Picker functionality</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='122' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigates to "https://demoqa.com/widgets" website</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='123' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Date Picker</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='124' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User selects Date "21" Month "June" and Year "2021"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='125' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters Month "December" Date "25" and Time "20:00"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='126' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Selected Date "06/21/2021" and entered Date and Time "December 25, 2020 8:00 PM" should be displayed</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
 					</div>
 				</li>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='95'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='127'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Home Page</span>
-						<span class='test-time'>Jul 8, 2020 11:03:19 PM</span>
+						<span class='test-time'>Jul 10, 2020 06:08:43 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='96' status='pass'>
+<div class='scenario node' test-id='128' status='pass'>
 	<div class='category-list'>
 		<span class='category label white-text'>@Web</span>
 	</div>
-	<span class='duration right label'>0h 0m 6s+956ms</span>
+	<span class='duration right label'>0h 0m 7s+675ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Home Page Title</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='97' class='node given pass' status='pass'>
+		<li test-id='129' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -1018,7 +1406,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='98' class='node then pass' status='pass'>
+		<li test-id='130' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -1028,17 +1416,17 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='99' status='pass'>
+<div class='scenario node' test-id='131' status='pass'>
 	<div class='category-list'>
 		<span class='category label white-text'>@Web</span>
 	</div>
-	<span class='duration right label'>0h 0m 6s+990ms</span>
+	<span class='duration right label'>0h 0m 6s+884ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Home Page Default Welcome Message</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='100' class='node given pass' status='pass'>
+		<li test-id='132' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -1046,7 +1434,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='101' class='node then pass' status='pass'>
+		<li test-id='133' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -1060,24 +1448,24 @@
 				</li>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='102'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='134'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Rest API</span>
-						<span class='test-time'>Jul 8, 2020 11:03:36 PM</span>
+						<span class='test-time'>Jul 10, 2020 06:09:00 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='103' status='pass'>
+<div class='scenario node' test-id='135' status='pass'>
 	<div class='category-list'>
 		<span class='category label white-text'>@Rest</span>
 	</div>
-	<span class='duration right label'>0h 0m 9s+131ms</span>
+	<span class='duration right label'>0h 0m 19s+78ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Post requests for Authorized, GenerateToken and User</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='104' class='node given pass' status='pass'>
+		<li test-id='136' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -1085,7 +1473,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='105' class='node and pass' status='pass'>
+		<li test-id='137' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -1093,7 +1481,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='106' class='node when pass' status='pass'>
+		<li test-id='138' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -1101,7 +1489,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='107' class='node and pass' status='pass'>
+		<li test-id='139' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -1109,7 +1497,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='108' class='node and pass' status='pass'>
+		<li test-id='140' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -1117,7 +1505,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='109' class='node then pass' status='pass'>
+		<li test-id='141' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -1204,27 +1592,27 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 8, 2020 10:57:34 PM</td>
+										<td>Jul 10, 2020 06:01:04 PM</td>
 										<td class='linked' test-id='2'>Mobile Test Cases.Verify Bouncing Balls in APIDemos apk - Animation</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2020 10:57:52 PM</td>
+										<td>Jul 10, 2020 06:01:26 PM</td>
 										<td class='linked' test-id='6'>Mobile Test Cases.Verify Alert Dialogs-Single choice list in APIDemos - App</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2020 10:58:12 PM</td>
+										<td>Jul 10, 2020 06:01:47 PM</td>
 										<td class='linked' test-id='11'>Mobile Test Cases.Verify Alert Dialogs-Ultra long message in APIDemos - App</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2020 10:58:35 PM</td>
+										<td>Jul 10, 2020 06:02:10 PM</td>
 										<td class='linked' test-id='17'>Mobile Test Cases.Verify Alert Dialogs-Text Entry dialog in APIDemos - App.Verify Alert Dialogs-Text Entry dialog in APIDemos - App</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2020 10:58:55 PM</td>
+										<td>Jul 10, 2020 06:02:30 PM</td>
 										<td class='linked' test-id='22'>Mobile Test Cases.Verify Alert Dialogs-Text Entry dialog in APIDemos - App.Verify Alert Dialogs-Text Entry dialog in APIDemos - App</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1258,7 +1646,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 8, 2020 10:57:34 PM</td>
+										<td>Jul 10, 2020 06:01:04 PM</td>
 										<td class='linked' test-id='2'>Mobile Test Cases.Verify Bouncing Balls in APIDemos apk - Animation</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1292,22 +1680,22 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 8, 2020 10:57:52 PM</td>
+										<td>Jul 10, 2020 06:01:26 PM</td>
 										<td class='linked' test-id='6'>Mobile Test Cases.Verify Alert Dialogs-Single choice list in APIDemos - App</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2020 10:58:12 PM</td>
+										<td>Jul 10, 2020 06:01:47 PM</td>
 										<td class='linked' test-id='11'>Mobile Test Cases.Verify Alert Dialogs-Ultra long message in APIDemos - App</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2020 10:58:35 PM</td>
+										<td>Jul 10, 2020 06:02:10 PM</td>
 										<td class='linked' test-id='17'>Mobile Test Cases.Verify Alert Dialogs-Text Entry dialog in APIDemos - App.Verify Alert Dialogs-Text Entry dialog in APIDemos - App</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2020 10:58:55 PM</td>
+										<td>Jul 10, 2020 06:02:30 PM</td>
 										<td class='linked' test-id='22'>Mobile Test Cases.Verify Alert Dialogs-Text Entry dialog in APIDemos - App.Verify Alert Dialogs-Text Entry dialog in APIDemos - App</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1320,13 +1708,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>@MobileBrowser</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -1341,9 +1729,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 8, 2020 10:59:15 PM</td>
+										<td>Jul 10, 2020 06:02:49 PM</td>
 										<td class='linked' test-id='28'>Verify MakeMyTrip on Mobile Browser.One Way trip search</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -1354,13 +1742,14 @@
 					<div class='category-heading'>
 						<span class='category-name'>@Demo</span>
 						<span class='category-status right'>
-							<span class='label pass'>12</span>
+							<span class='label pass'>17</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 12</span>
-							
+							<span class='label green accent-4 white-text'>Passed: 17</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -1375,63 +1764,93 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 8, 2020 11:00:16 PM</td>
+										<td>Jul 10, 2020 06:03:46 PM</td>
 										<td class='linked' test-id='34'>Verify Demo QA Website.Verify Text Box functionality</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2020 11:00:27 PM</td>
+										<td>Jul 10, 2020 06:03:57 PM</td>
 										<td class='linked' test-id='39'>Verify Demo QA Website.Verify Check Box functionality</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2020 11:00:38 PM</td>
+										<td>Jul 10, 2020 06:04:07 PM</td>
 										<td class='linked' test-id='44'>Verify Demo QA Website.Verify Radio Button functionality</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2020 11:00:48 PM</td>
+										<td>Jul 10, 2020 06:04:18 PM</td>
 										<td class='linked' test-id='49'>Verify Demo QA Website.Verify Web Tables functionality</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2020 11:01:00 PM</td>
+										<td>Jul 10, 2020 06:04:28 PM</td>
 										<td class='linked' test-id='54'>Verify Demo QA Website.Verify Buttons functionality</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2020 11:01:10 PM</td>
+										<td>Jul 10, 2020 06:04:40 PM</td>
 										<td class='linked' test-id='59'>Verify Demo QA Website.Verify API Links functionality</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2020 11:01:35 PM</td>
+										<td>Jul 10, 2020 06:05:05 PM</td>
 										<td class='linked' test-id='64'>Verify Demo QA Website.Verify New Tab Links functionality</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2020 11:01:50 PM</td>
+										<td>Jul 10, 2020 06:05:19 PM</td>
 										<td class='linked' test-id='69'>Verify Demo QA Website.Verify Download functionality</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2020 11:02:06 PM</td>
+										<td>Jul 10, 2020 06:05:35 PM</td>
 										<td class='linked' test-id='74'>Verify Demo QA Website.Verify Upload functionality</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2020 11:02:25 PM</td>
+										<td>Jul 10, 2020 06:05:53 PM</td>
 										<td class='linked' test-id='79'>Verify Demo QA Website.Verify Dynamic Properties functionality</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2020 11:02:42 PM</td>
+										<td>Jul 10, 2020 06:06:09 PM</td>
 										<td class='linked' test-id='83'>Verify Demo QA Website.Verify Practice Form functionality</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2020 11:03:02 PM</td>
+										<td>Jul 10, 2020 06:06:30 PM</td>
 										<td class='linked' test-id='89'>Verify Demo QA Website.Verify Browser Windows functionality</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2020 06:06:48 PM</td>
+										<td class='linked' test-id='95'>Verify Demo QA Website.Verify Alerts functionality</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2020 06:07:05 PM</td>
+										<td class='linked' test-id='102'>Verify Demo QA Website.Verify Frames functionality</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2020 06:07:16 PM</td>
+										<td class='linked' test-id='106'>Verify Demo QA Website.Verify Modal Dialogs functionality</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2020 06:07:36 PM</td>
+										<td class='linked' test-id='111'>Verify Demo QA Website.Verify Accordian functionality</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2020 06:07:51 PM</td>
+										<td class='linked' test-id='116'>Verify Demo QA Website.Verify Auto Complete functionality</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2020 06:08:02 PM</td>
+										<td class='linked' test-id='121'>Verify Demo QA Website.Verify Date Picker functionality</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -1464,13 +1883,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 8, 2020 11:03:19 PM</td>
-										<td class='linked' test-id='96'>Verify Home Page.Verify Home Page Title</td>
+										<td>Jul 10, 2020 06:08:43 PM</td>
+										<td class='linked' test-id='128'>Verify Home Page.Verify Home Page Title</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2020 11:03:27 PM</td>
-										<td class='linked' test-id='99'>Verify Home Page.Verify Home Page Default Welcome Message</td>
+										<td>Jul 10, 2020 06:08:52 PM</td>
+										<td class='linked' test-id='131'>Verify Home Page.Verify Home Page Default Welcome Message</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -1503,8 +1922,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 8, 2020 11:03:36 PM</td>
-										<td class='linked' test-id='103'>Verify Rest API.Verify Post requests for Authorized, GenerateToken and User</td>
+										<td>Jul 10, 2020 06:09:00 PM</td>
+										<td class='linked' test-id='135'>Verify Rest API.Verify Post requests for Authorized, GenerateToken and User</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -1524,6 +1943,198 @@
 	</div>
 </div>
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Jul 10, 2020 06:03:26 PM</td>
+                                                        <td class='linked' test-id='30'>Verify MakeMyTrip on Mobile Browser.One Way trip search.When User clicks on One Way search</td>
+                                                        <td><pre><textarea>org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.xpath: //li[@data-cy='oneWayTrip']
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
+	at StepDefinitions.MobileBrowserStepDefinition.userClicksOnOneWaySearch(MobileBrowserStepDefinition.java:85)
+	at ?.When User clicks on One Way search(VerifyBrowserOnMobile.feature:6)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@1b2d7c3e (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
+	at StepDefinitions.MobileBrowserStepDefinition.userClicksOnOneWaySearch(MobileBrowserStepDefinition.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@data-cy='oneWayTrip']"}
+  (Session info: chrome=83.0.4099.5)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-EDS2GI91', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, databaseEnabled: false, desired: {browserName: Chrome, deviceName: PIXEL 2 API R, platformName: android}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: sdk_gphone_x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: android, platformVersion: 10, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 569b0a6d-bec9-469e-a6fa-7a7f20575970
+*** Element info: {Using=xpath, value=//li[@data-cy='oneWayTrip']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 44 more
+</textarea></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.AssertionError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Jul 10, 2020 06:05:04 PM</td>
+                                                        <td class='linked' test-id='63'>Verify Demo QA Website.Verify API Links functionality.Then Verify correct call is being made</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at StepDefinitions.DemoQAStepDefinition.verifyCorrectCallIsBeingMade(DemoQAStepDefinition.java:272)
+	at ?.Then Verify correct call is being made(VerifyDemoQA.feature:43)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -1539,31 +2150,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>21</div>
+					<div class='panel-lead'>27</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>82</div>
+					<div class='panel-lead'>108</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 8, 2020 10:57:34 PM</div>
+					<div class='panel-lead'>Jul 10, 2020 06:01:04 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 8, 2020 11:03:45 PM</div>
+			 		<div class='panel-lead'>Jul 10, 2020 06:09:19 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>371,099ms</div>
+					<div class='panel-lead'>494,820ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -1607,20 +2218,20 @@
 						</tr>
 						<tr>
 							<td>@MobileBrowser</td>
+							<td>0</td>
 							<td>1</td>
 							<td>0</td>
-							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 						<tr>
 							<td>@Demo</td>
-							<td>12</td>
-							<td>0</td>
+							<td>17</td>
+							<td>1</td>
 							<td>0</td>
 							<td>
-									100%
+									94.444%
 							</td>
 						</tr>
 						<tr>
@@ -1654,31 +2265,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 5,
-				failParent: 0,
+				passParent: 3,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 2,
 				
-				passChild: 21,
-				failChild: 0,
+				passChild: 25,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 2,
 				
-				passGrandChild: 82,
-				failGrandChild: 0,
+				passGrandChild: 104,
+				failGrandChild: 2,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 2,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 4,
 			};
 		</script>
 		
