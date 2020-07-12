@@ -881,4 +881,61 @@ public class DemoQAPageObjects {
     public WebElement menuSubSubItem2() {
         return menuSubSubItem2;
     }
+
+    @FindBy(xpath = "//span[text()='Select Menu']")
+    private WebElement selectMenu;
+
+    public WebElement selectMenu() {
+        return selectMenu;
+    }
+
+    @FindBy(xpath = "(//div[contains(@class,'indicator')])[1]")
+    private WebElement selectOption;
+
+    public WebElement selectOption() {
+        return selectOption;
+    }
+
+    @FindBy(xpath = "//div[@id='withOptGroup'] //input[contains(@id,'react-select')]")
+    private WebElement enterSelectOption;
+
+    public WebElement enterSelectOption() {
+        return enterSelectOption;
+    }
+
+    @FindBy(xpath = "(//div[contains(@class,'indicator')])[2]")
+    private WebElement selectTitle;
+
+    public WebElement selectTitle() {
+        return selectTitle;
+    }
+
+    @FindBy(xpath = "//div[@id='selectOne'] //input[contains(@id,'react-select')]")
+    private WebElement enterSelectTitle;
+
+    public WebElement enterSelectTitle() {
+        return enterSelectTitle;
+    }
+
+    @FindBy(id = "oldSelectMenu")
+    private WebElement oldStyleSelect;
+
+    public Select oldStyleSelect() {
+        Select oldStyle = new Select(oldStyleSelect);
+        return oldStyle;
+    }
+
+    @FindBy(xpath = "//div[@id='withOptGroup'] //div[contains(@class,'singleValue')]")
+    private WebElement verifySelectOption;
+
+    public WebElement verifySelectOption() {
+        return verifySelectOption;
+    }
+
+    @FindBy(xpath = "//div[@id='selectOne'] //div[contains(@class,'singleValue')]")
+    private WebElement verifySelectTitle;
+
+    public WebElement verifySelectTitle() {
+        return verifySelectTitle;
+    }
 }

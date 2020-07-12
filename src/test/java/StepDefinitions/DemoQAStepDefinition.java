@@ -1,7 +1,6 @@
 package StepDefinitions;
 
 import PageObjects.DemoQAPageObjects;
-import PageObjects.HomePageObjects;
 import Resources.Base;
 import cucumber.api.PendingException;
 import cucumber.api.java.After;
@@ -19,7 +18,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -975,5 +973,43 @@ public class DemoQAStepDefinition extends Base {
 
         act.moveToElement(dqa.menuSubSubItem2()).build().perform();
         log.info("Hovering on Sub Sub Item 2");
+    }
+
+    @When("^User clicks on Select Menu$")
+    public void userClicksOnSelectMenu() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,500)");
+
+        dqa = new DemoQAPageObjects(driver);
+        dqa.selectMenu().click();
+        log.info("Select Menu clicked");
+    }
+
+    @And("^User select the values \"([^\"]*)\" \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void userSelectTheValuesAnd(String selectOption, String selectTitle, String oldStyleSelect) throws Throwable {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,-500)");
+
+        dqa.selectOption().click();
+        dqa.enterSelectOption().sendKeys(selectOption);
+        dqa.enterSelectOption().sendKeys(Keys.ENTER);
+        log.info("Option is selected");
+
+        dqa.selectTitle().click();
+        dqa.enterSelectTitle().sendKeys(selectTitle);
+        dqa.enterSelectTitle().sendKeys(Keys.ENTER);
+        log.info("Title is selected");
+
+        dqa.oldStyleSelect().selectByVisibleText(oldStyleSelect);
+        log.info("Old Style is selected");
+    }
+
+    @Then("^Verify values are selected \"([^\"]*)\" \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void verifyValuesAreSelectedAnd(String selectedOption, String selectedTitle, String arg2) throws Throwable {
+        Assert.assertTrue(dqa.verifySelectOption().getText().equals(selectedOption));
+        log.info("Selected Option is verified");
+
+        Assert.assertTrue(dqa.verifySelectTitle().getText().equals(selectedTitle));
+        log.info("Selected Title is verified");
     }
 }

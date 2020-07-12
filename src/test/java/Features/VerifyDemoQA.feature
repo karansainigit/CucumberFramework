@@ -161,3 +161,10 @@ Feature: Verify Demo QA Website
     Given User navigates to "https://demoqa.com/widgets" website
     When User clicks on Menu
     And User hover over the menu to select
+
+  @Demo
+  Scenario: Verify Select Menu functionality
+    Given User navigates to "https://demoqa.com/widgets" website
+    When User clicks on Select Menu
+    And User select the values "Group 2, option 2" "Mr." and "Voilet"
+    Then Verify values are selected "Group 2, option 2" "Mr." and "Voilet"
