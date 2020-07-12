@@ -13,6 +13,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -103,5 +104,10 @@ public class Base {
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         String destinationFile = System.getProperty("user.dir") + "\\logs\\androidscreen.png";
         FileUtils.copyFile(src, new File(destinationFile));
+    }
+
+    public WebDriverWait explicitWait(WebDriver driver, int timeInSeconds) {
+        WebDriverWait expWait = new WebDriverWait(driver,timeInSeconds);
+        return expWait;
     }
 }

@@ -762,4 +762,123 @@ public class DemoQAPageObjects {
     public List<WebElement> selectTime() {
         return selectTime;
     }
+
+    @FindBy(xpath = "//span[text()='Slider']")
+    private WebElement slider;
+
+    public WebElement slider() {
+        return slider;
+    }
+
+    @FindBy(xpath = "//input[contains(@class,'slider')]")
+    private WebElement sliderWidget;
+
+    public WebElement sliderWidget() {
+        return sliderWidget;
+    }
+
+    @FindBy(id = "sliderValue")
+    private WebElement sliderValue;
+
+    public WebElement sliderValue() {
+        return sliderValue;
+    }
+
+    @FindBy(xpath = "//span[text()='Progress Bar']")
+    private WebElement progressBar;
+
+    public WebElement progressBar() {
+        return progressBar;
+    }
+
+    @FindBy(id = "startStopButton")
+    private WebElement startProgress;
+
+    public WebElement startProgress() {
+        return startProgress;
+    }
+
+    @FindBy(xpath = "//div[@role='progressbar']")
+    private WebElement progressStatus;
+
+    public WebElement progressStatus() {
+        return progressStatus;
+    }
+
+    @FindBy(xpath = "//span[text()='Tabs']")
+    private WebElement tabs;
+
+    public WebElement tabs() {
+        return tabs;
+    }
+
+    @FindBy(id = "demo-tab-origin")
+    private WebElement originTab;
+
+    public WebElement originTab() {
+        return originTab;
+    }
+
+    @FindBy(id = "demo-tab-more")
+    private WebElement moreTab;
+
+    public WebElement moreTab() {
+        return moreTab;
+    }
+
+    @FindBy(xpath = "//span[text()='Tool Tips']")
+    private WebElement toolTips;
+
+    public WebElement toolTips() {
+        return toolTips;
+    }
+
+    @FindBy(id = "toolTipButton")
+    private WebElement hoverOverButton;
+
+    public WebElement hoverOverButton() {
+        return hoverOverButton;
+    }
+
+    @FindBy(id = "toolTipTextField")
+    private WebElement hoverOverTextField;
+
+    public WebElement hoverOverTextField() {
+        return hoverOverTextField;
+    }
+
+    @FindBy(linkText = "Contrary")
+    private WebElement hoverOverText;
+
+    public WebElement hoverOverText() {
+        return hoverOverText;
+    }
+
+    @FindBy(xpath = "//span[text()='Menu']")
+    private WebElement menu;
+
+    public WebElement menu() {
+        return menu;
+    }
+
+    @FindBy(linkText = "Main Item 2")
+    private WebElement menuMainItem2;
+
+    public WebElement menuMainItem2() {
+        return menuMainItem2;
+    }
+
+    @FindBy(linkText = "SUB SUB LIST »")
+    private WebElement menuSubSubList;
+
+    public WebElement menuSubSubList() {
+        return menuSubSubList;
+    }
+
+    @FindBy(linkText = "Sub Sub Item 2")
+    private WebElement menuSubSubItem2;
+
+    public WebElement menuSubSubItem2() {
+        return menuSubSubItem2;
+    }
 }

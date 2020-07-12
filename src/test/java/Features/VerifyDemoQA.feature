@@ -128,3 +128,36 @@ Feature: Verify Demo QA Website
     And User selects Date "21" Month "June" and Year "2021"
     And User enters Month "December" Date "25" and Time "20:00"
     Then Selected Date "06/21/2021" and entered Date and Time "December 25, 2020 8:00 PM" should be displayed
+
+  @Demo
+  Scenario: Verify Slider functionality
+    Given User navigates to "https://demoqa.com/widgets" website
+    When User clicks on Slider
+    And User slides the slider
+    Then Verify the slider value
+
+  @Demo
+  Scenario: Verify Progress Bar functionality
+    Given User navigates to "https://demoqa.com/widgets" website
+    When User clicks on Progress Bar
+    And User clicks on Start button and waits for the progress bar to complete
+    Then Verify progress bar value is "100"
+
+  @Demo
+  Scenario: Verify Tabs functionality
+    Given User navigates to "https://demoqa.com/widgets" website
+    When User clicks on Tabs
+    And User clicks on any Tab and verify its active
+    Then Verify disabled tab as well
+
+  @Demo
+  Scenario: Verify Tool Tips functionality
+    Given User navigates to "https://demoqa.com/widgets" website
+    When User clicks on Tool Tips
+    And User hover over the elements and verify the tool tip
+
+  @Demo
+  Scenario: Verify Menu functionality
+    Given User navigates to "https://demoqa.com/widgets" website
+    When User clicks on Menu
+    And User hover over the menu to select

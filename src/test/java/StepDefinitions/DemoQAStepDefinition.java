@@ -14,10 +14,14 @@ import cucumber.api.junit.Cucumber;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
 import org.junit.runner.RunWith;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.io.File;
@@ -31,6 +35,7 @@ import java.util.Set;
 public class DemoQAStepDefinition extends Base {
 
     public WebDriver driver;
+    public WebDriverWait expWait;
     public static Logger log = (Logger) LogManager.getLogger(DemoQAStepDefinition.class.getName());
 
     public String createdLinkMessage;
@@ -805,5 +810,170 @@ public class DemoQAStepDefinition extends Base {
 
         Assert.assertTrue(dqa.selectDateAndTime().getAttribute("value").equals(dateAndTime));
         log.info("Date and Time verified");
+    }
+
+    @When("^User clicks on Slider$")
+    public void userClicksOnSlider() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,300)");
+
+        dqa = new DemoQAPageObjects(driver);
+        dqa.slider().click();
+        log.info("Slider clicked");
+    }
+
+    @And("^User slides the slider$")
+    public void userSlidesTheSlider() throws InterruptedException {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,-300)");
+
+        int x = dqa.sliderWidget().getLocation().getX();
+        int y = (dqa.sliderWidget().getLocation().getY() + dqa.sliderWidget().getSize().getHeight())/2;
+
+        Actions a = new Actions(driver);
+        a.dragAndDropBy(dqa.sliderWidget(),x,y).release().build().perform();
+        log.info("Slider slided to 100");
+
+        Thread.sleep(2000);
+    }
+
+    @Then("^Verify the slider value$")
+    public void verifyTheSliderValue() {
+        Assert.assertTrue(dqa.sliderWidget().getAttribute("value").equals("100"));
+        log.info("Slider value verified");
+
+        Assert.assertTrue(dqa.sliderValue().getAttribute("value").equals("100"));
+        log.info("Slider value verified");
+    }
+
+    @When("^User clicks on Progress Bar$")
+    public void userClicksOnProgressBar() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,350)");
+
+        dqa = new DemoQAPageObjects(driver);
+        dqa.progressBar().click();
+        log.info("Progress Bar clicked");
+    }
+
+    @And("^User clicks on Start button and waits for the progress bar to complete$")
+    public void userClicksOnStartButtonAndWaitsForTheProgressBarToComplete() throws InterruptedException {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,-350)");
+
+        dqa.startProgress().click();
+        log.info("Start Progress clicked");
+    }
+
+    @Then("^Verify progress bar value is \"([^\"]*)\"$")
+    public void verifyProgressBarValueIs(String progressStatus) throws Throwable {
+        expWait = explicitWait(driver,15);
+
+        expWait.until(ExpectedConditions.attributeToBe(dqa.progressStatus(),"aria-valuenow",progressStatus));
+        log.info("Waiting for progress to be 100%");
+
+        Assert.assertTrue(dqa.progressStatus().getAttribute("aria-valuenow").equals(progressStatus));
+        log.info("100% progress");
+    }
+
+    @When("^User clicks on Tabs$")
+    public void userClicksOnTabs() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,350)");
+
+        dqa = new DemoQAPageObjects(driver);
+        dqa.tabs().click();
+        log.info("Tabs clicked");
+    }
+
+    @And("^User clicks on any Tab and verify its active$")
+    public void userClicksOnAnyTabAndVerifyItsActive() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,-350)");
+
+        dqa.originTab().click();
+        log.info("Origin Tab clicked");
+
+        Assert.assertTrue(dqa.originTab().getAttribute("class").contains("active"));
+        log.info("Origin Tab is active");
+    }
+
+    @Then("^Verify disabled tab as well$")
+    public void verifyDisabledTabAsWell() {
+        Assert.assertTrue(dqa.moreTab().getAttribute("class").contains("disabled"));
+        log.info("More Tab is disabled");
+    }
+
+    @When("^User clicks on Tool Tips$")
+    public void userClicksOnToolTips() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,400)");
+
+        dqa = new DemoQAPageObjects(driver);
+        dqa.toolTips().click();
+        log.info("Tool Tips clicked");
+    }
+
+    @And("^User hover over the elements and verify the tool tip$")
+    public void userHoverOverTheElementsAndVerifyTheToolTip() throws InterruptedException {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,-400)");
+
+        Actions hoverButton = new Actions(driver);
+        hoverButton.moveToElement(dqa.hoverOverButton()).build().perform();
+        log.info("Hover over button");
+
+        expWait = explicitWait(driver,5);
+        expWait.until(ExpectedConditions.attributeToBe(dqa.hoverOverButton(),"aria-describedBy","buttonToolTip"));
+        log.info("Waiting for tool tip to come");
+
+        Assert.assertTrue(dqa.hoverOverButton().getAttribute("aria-describedBy").equals("buttonToolTip"));
+        log.info("Tool tip verified for button");
+
+        Actions hoverTextField = new Actions(driver);
+        hoverButton.moveToElement(dqa.hoverOverTextField()).build().perform();
+        log.info("Hover over text field");
+
+        expWait.until(ExpectedConditions.attributeToBe(dqa.hoverOverTextField(),"aria-describedBy","textFieldToolTip"));
+        log.info("Waiting for tool tip to come");
+
+        Assert.assertTrue(dqa.hoverOverTextField().getAttribute("aria-describedBy").equals("textFieldToolTip"));
+        log.info("Tool tip verified for text field");
+
+        Actions hoverText = new Actions(driver);
+        hoverButton.moveToElement(dqa.hoverOverText()).build().perform();
+        log.info("Hover over text");
+
+        expWait.until(ExpectedConditions.attributeToBe(dqa.hoverOverText(),"aria-describedBy","contraryTexToolTip"));
+        log.info("Waiting for tool tip to come");
+
+        Assert.assertTrue(dqa.hoverOverText().getAttribute("aria-describedBy").equals("contraryTexToolTip"));
+        log.info("Tool tip verified for text");
+    }
+
+    @When("^User clicks on Menu$")
+    public void userClicksOnMenu() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,450)");
+
+        dqa = new DemoQAPageObjects(driver);
+        dqa.menu().click();
+        log.info("Menu clicked");
+    }
+
+    @And("^User hover over the menu to select$")
+    public void userHoverOverTheMenuToSelect() throws InterruptedException {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,-450)");
+
+        Actions act = new Actions(driver);
+        act.moveToElement(dqa.menuMainItem2()).build().perform();
+        log.info("Hovering on Menu Item 2");
+
+        act.moveToElement(dqa.menuSubSubList()).build().perform();
+        log.info("Hovering on SUB SUB LIST");
+
+        act.moveToElement(dqa.menuSubSubItem2()).build().perform();
+        log.info("Hovering on Sub Sub Item 2");
     }
 }
