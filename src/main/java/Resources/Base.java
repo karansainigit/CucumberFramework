@@ -94,16 +94,18 @@ public class Base {
         return androiddriver;
     }
 
-    public void getScreenshotWeb(WebDriver driver) throws IOException {
+    public String getScreenshotWeb(WebDriver driver, String failedTestCase) throws IOException {
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        String destinationFile = System.getProperty("user.dir") + "\\logs\\webscreen.png";
+        String destinationFile = System.getProperty("user.dir") + "\\screenshots\\webscreen-" + failedTestCase + ".png";
         FileUtils.copyFile(src, new File(destinationFile));
+        return destinationFile;
     }
 
-    public void getScreenshotAndroid(AndroidDriver<AndroidElement> driver) throws IOException {
+    public String getScreenshotAndroid(AndroidDriver<AndroidElement> driver, String failedTestCase) throws IOException {
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        String destinationFile = System.getProperty("user.dir") + "\\logs\\androidscreen.png";
+        String destinationFile = System.getProperty("user.dir") + "\\screenshots\\androidscreen-" + failedTestCase + ".png";
         FileUtils.copyFile(src, new File(destinationFile));
+        return destinationFile;
     }
 
     public WebDriverWait explicitWait(WebDriver driver, int timeInSeconds) {

@@ -2,7 +2,9 @@ package StepDefinitions;
 
 import PageObjects.*;
 import Resources.Base;
+import com.cucumber.listener.Reporter;
 import cucumber.api.PendingException;
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -52,8 +54,12 @@ public class MobileBrowserStepDefinition extends Base {
     }
 
     @After("@MobileBrowser")
-    public void closingMobileApp() throws InterruptedException {
-        Thread.sleep(5000);
+    public void closingMobileApp(Scenario scenario) throws IOException {
+        if (scenario.isFailed()) {
+            // Take a screenshot...
+            String screen = getScreenshotAndroid(driver,scenario.getName());
+            Reporter.addScreenCaptureFromPath(screen);
+        }
         driver.quit();
         log.info("Mobile App closed");
     }

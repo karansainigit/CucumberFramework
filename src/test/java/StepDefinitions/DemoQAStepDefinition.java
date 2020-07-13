@@ -2,7 +2,8 @@ package StepDefinitions;
 
 import PageObjects.DemoQAPageObjects;
 import Resources.Base;
-import cucumber.api.PendingException;
+import com.cucumber.listener.Reporter;
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -13,10 +14,7 @@ import cucumber.api.junit.Cucumber;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
 import org.junit.runner.RunWith;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -55,7 +53,12 @@ public class DemoQAStepDefinition extends Base {
     }
 
     @After("@Demo")
-    public void tearDown() {
+    public void tearDown(Scenario scenario) throws IOException {
+        if (scenario.isFailed()) {
+            // Take a screenshot...
+            String screen = getScreenshotWeb(driver,scenario.getName());
+            Reporter.addScreenCaptureFromPath(screen);
+        }
         driver.quit();
         log.info("Browser closed");
     }

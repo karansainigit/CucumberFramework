@@ -2,6 +2,8 @@ package StepDefinitions;
 
 import PageObjects.HomePageObjects;
 import Resources.Base;
+import com.cucumber.listener.Reporter;
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -30,7 +32,12 @@ public class WebStepDefinition extends Base {
     }
 
     @After("@Web")
-    public void tearDown() {
+    public void tearDown(Scenario scenario) throws IOException {
+        if (scenario.isFailed()) {
+            // Take a screenshot...
+            String screen = getScreenshotWeb(driver,scenario.getName());
+            Reporter.addScreenCaptureFromPath(screen);
+        }
         driver.quit();
         log.info("Browser closed");
     }
