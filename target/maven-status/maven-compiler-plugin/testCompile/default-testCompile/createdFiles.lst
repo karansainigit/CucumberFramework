@@ -1,3 +1,3 @@
-CucumberOptions\TestRunner.class
+CucumberOptions\TestRunner2.class
 StepDefinitions\WebStepDefinition.class
 StepDefinitions\MobileStepDefinition.class

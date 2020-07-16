@@ -1,6 +1,6 @@
+@Rest
 Feature: Verify Rest API
 
-  @Rest
   Scenario: Verify Post requests for Authorized, GenerateToken and User
     Given BaseURL "https://demoqa.com/Account/v1" is set
     And Username "TOOLSQA-Test" and Password "Test@@123" for the request body
