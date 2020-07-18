@@ -938,4 +938,158 @@ public class DemoQAPageObjects {
     public WebElement verifySelectTitle() {
         return verifySelectTitle;
     }
+
+    @FindBy(xpath = "//span[text()='Droppable']")
+    private WebElement droppable;
+
+    public WebElement droppable() {
+        return droppable;
+    }
+
+    @FindBy(css = "#draggable")
+    private WebElement simpleDraggable;
+
+    public WebElement simpleDraggable() {
+        return simpleDraggable;
+    }
+
+    @FindBy(css = "#simpleDropContainer #droppable")
+    private WebElement simpleDropHere;
+
+    public WebElement simpleDropHere() {
+        return simpleDropHere;
+    }
+
+    @FindBy(css = "#simpleDropContainer #droppable p")
+    private WebElement verifySimpleDragAndDrop;
+
+    public WebElement verifySimpleDragAndDrop() {
+        return verifySimpleDragAndDrop;
+    }
+
+    @FindBy(css = "a[id*='accept']")
+    private WebElement accept;
+
+    public WebElement clickAccept() {
+        return accept;
+    }
+
+    @FindBy(css = "#acceptDropContainer #acceptable")
+    private WebElement acceptableDraggable;
+
+    public WebElement acceptableDraggable() {
+        return acceptableDraggable;
+    }
+
+    @FindBy(css = "#acceptDropContainer #droppable")
+    private WebElement acceptableDropHere;
+
+    public WebElement acceptableDropHere() {
+        return acceptableDropHere;
+    }
+
+    @FindBy(css = "#acceptDropContainer #droppable p")
+    private WebElement verifyAcceptableDragAndDrop;
+
+    public WebElement verifyAcceptableDragAndDrop() {
+        return verifyAcceptableDragAndDrop;
+    }
+
+    @FindBy(css = "#acceptDropContainer #notAcceptable")
+    private WebElement notAcceptableDraggable;
+
+    public WebElement notAcceptableDraggable() {
+        return notAcceptableDraggable;
+    }
+
+    @FindBy(xpath = "//span[text()='Sortable']")
+    private WebElement sortable;
+
+    public WebElement sortable() {
+        return sortable;
+    }
+
+    @FindBy(css = "div[class*='vertical-list'] div")
+    private List<WebElement> verticalList;
+
+    public List<WebElement> verticalList() {
+        return verticalList;
+    }
+
+    @FindBy(xpath = "//span[text()='Selectable']")
+    private WebElement selectable;
+
+    public WebElement selectable() {
+        return selectable;
+    }
+
+    @FindBy(css = "#verticalListContainer li:nth-child(2)")
+    private WebElement select2nd;
+
+    public WebElement select2nd() {
+        return select2nd;
+    }
+
+    @FindBy(css = "#verticalListContainer li:nth-child(4)")
+    private WebElement select4th;
+
+    public WebElement select4th() {
+        return select4th;
+    }
+
+    @FindBy(xpath = "//span[text()='Resizable']")
+    private WebElement resizable;
+
+    public WebElement resizable() {
+        return resizable;
+    }
+
+    @FindBy(css = "#resizableBoxWithRestriction")
+    private WebElement resizableBox;
+
+    public WebElement resizableBox() {
+        return resizableBox;
+    }
+
+    @FindBy(css = "#resizableBoxWithRestriction span")
+    private WebElement resizeBox;
+
+    public WebElement resizeBox() {
+        return resizeBox;
+    }
+
+    @FindBy(css = "div[class='constraint-area']")
+    private WebElement restrictedArea;
+
+    public WebElement restrictedArea() {
+        return restrictedArea;
+    }
+
+    @FindBy(id = "login")
+    private WebElement login;
+
+    public WebElement login() {
+        return login;
+    }
+
+    @FindBy(id = "userName")
+    private WebElement userName;
+
+    public WebElement userName() {
+        return userName;
+    }
+
+    @FindBy(id = "password")
+    private WebElement password;
+
+    public WebElement password() {
+        return password;
+    }
+
+    @FindBy(css = "#userName-value")
+    private WebElement userNameValue;
+
+    public WebElement userNameValue() {
+        return userNameValue;
+    }
 }

@@ -4,9 +4,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -111,5 +109,21 @@ public class Base {
     public WebDriverWait explicitWait(WebDriver driver, int timeInSeconds) {
         WebDriverWait expWait = new WebDriverWait(driver,timeInSeconds);
         return expWait;
+    }
+
+    public void scrollingPageForElement(WebDriver driver, WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        int i = 1;
+        while(i > 0) {
+            try {
+                element.click();
+            } catch (Exception e) {
+                js.executeScript("window.scrollBy(0,400)");
+            }
+            if (element.isDisplayed()) {
+                break;
+            }
+        }
     }
 }

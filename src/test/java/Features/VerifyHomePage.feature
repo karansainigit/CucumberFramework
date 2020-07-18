@@ -7,4 +7,4 @@ Feature: Verify Home Page
 
   Scenario: Verify Home Page Default Welcome Message
     Given Navigate to "http://live.demoguru99.com/index.php/" website
-    Then Verify Default Welcome Message is "DEFAULT WELCOME MSG"
+    Then Verify Default Welcome Message is "DEFAULT WELCOME MSG!"

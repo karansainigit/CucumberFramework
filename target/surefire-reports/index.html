@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-All_Test_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="CucumberOptions.TestRunner2" hash-for-method="feature(Mobile Test Cases)">feature(Mobile Test Cases)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="CucumberOptions.TestRunner2" hash-for-method="feature(Verify Demo QA Website)">feature(Verify Demo QA Website)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-All_Test_Suite -->
@@ -125,10 +125,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Mobile Test Cases)">
-                  </a> <!-- feature(Mobile Test Cases) -->
+                  <a name="feature(Verify Demo QA Website)">
+                  </a> <!-- feature(Verify Demo QA Website) -->
                   <span class="method-name">feature</span>
-                  <span class="parameters">(Mobile Test Cases)</span>
+                  <span class="parameters">(Verify Demo QA Website)</span>
                   <em>
 (Runs Cucumber Feature)                  </em>
                 </div> <!-- method-content -->
@@ -147,7 +147,7 @@
 &lt;suite thread-count=&quot;4&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;All Test Suite&quot; parallel=&quot;tests&quot;&gt;
   &lt;test thread-count=&quot;4&quot; verbose=&quot;2&quot; name=&quot;Test Case 1&quot; parallel=&quot;tests&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;CucumberOptions.TestRunner&quot;/&gt;
+      &lt;class name=&quot;CucumberOptions.TestRunner1&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test Case 1 --&gt;
   &lt;test thread-count=&quot;4&quot; verbose=&quot;2&quot; name=&quot;Test Case 2&quot; parallel=&quot;tests&quot;&gt;
@@ -207,12 +207,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'CucumberOptions.TestRunner2')
-data.setCell(0, 3, 114089);
+data.setCell(0, 3, 341733);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -238,52 +238,59 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">CucumberOptions.TestRunner2</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">CucumberOptions.TestRunner1</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">CucumberOptions.TestRunner</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">CucumberOptions.TestRunner2</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">feature(Verify Home Page)</span>
-                <span class="method-start">547 ms</span>
+                <span class="method-name">feature(Verify Demo QA Website)</span>
+                <span class="method-start">256 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">CucumberOptions.TestRunner2</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">CucumberOptions.TestRunner1</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">feature(Mobile Test Cases)</span>
-                <span class="method-start">547 ms</span>
+                <span class="method-start">256 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">CucumberOptions.TestRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">feature(Verify Book Store Application)</span>
+                <span class="method-start">73856 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature(Verify Home Page)</span>
+                <span class="method-start">83665 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature(Verify Interaction on Demo QA Website)</span>
+                <span class="method-start">98824 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">writeExtentReport</span>
-                <span class="method-start">18105 ms</span>
+                <span class="method-start">164995 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">18111 ms</span>
+                <span class="method-start">165001 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">CucumberOptions.TestRunner2</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">writeExtentReport</span>
-                <span class="method-start">114637 ms</span>
+                <span class="method-start">341989 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">114641 ms</span>
+                <span class="method-start">341991 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
