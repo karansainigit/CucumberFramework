@@ -1092,4 +1092,60 @@ public class DemoQAPageObjects {
     public WebElement userNameValue() {
         return userNameValue;
     }
+
+    @FindBy(css = "span[id*='see-book'] a")
+    private List<WebElement> allBooks;
+
+    public List<WebElement> allBooks() {
+        return allBooks;
+    }
+
+    @FindBy(xpath = "//label[text()='Speaking JavaScript']")
+    private WebElement bookTitle;
+
+    public WebElement bookTitle() {
+        return bookTitle;
+    }
+
+    @FindBy(xpath = "//button[starts-with(text(),'Add')]")
+    private WebElement addToCollection;
+
+    public WebElement addToCollection() {
+        return addToCollection;
+    }
+
+    @FindBy(xpath = "//span[text()='Profile']")
+    private WebElement profile;
+
+    public WebElement profile() {
+        return profile;
+    }
+
+    @FindBy(xpath = "//span[starts-with(@id,'see-book')]/a")
+    private WebElement bookTitleInProfile;
+
+    public WebElement bookTitleInProfile() {
+        return bookTitleInProfile;
+    }
+
+    @FindBy(xpath = "//span[@title='Delete']")
+    private WebElement deleteBook;
+
+    public WebElement deleteBook() {
+        return deleteBook;
+    }
+
+    @FindBy(css = "button[id*=ok]")
+    private WebElement okToDelete;
+
+    public WebElement okToDelete() {
+        return okToDelete;
+    }
+
+    @FindBy(xpath = "//button[text()='Log out']")
+    private WebElement logOut;
+
+    public WebElement logOut() {
+        return logOut;
+    }
 }

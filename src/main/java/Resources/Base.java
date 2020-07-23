@@ -24,7 +24,7 @@ import java.util.concurrent.TimeUnit;
 public class Base {
 
     public WebDriver driver;
-    AndroidDriver<AndroidElement> androiddriver;
+    public AndroidDriver<AndroidElement> androiddriver;
     public Properties prop;
 
     public WebDriver initializeDriver() throws IOException {

@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 17, 2020 08:10:27 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 22, 2020 09:23:34 PM</span>
 				</a>
 			</li>
 			<li>
@@ -90,9 +90,9 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Demo</a></li>
 					<li><a href='#'>@Mobile</a></li>
 					<li><a href='#'>@Animation</a></li>
+					<li><a href='#'>@Demo</a></li>
 					<li><a href='#'>@App</a></li>
 					<li><a href='#'>@Book</a></li>
 					<li><a href='#'>@Web</a></li>
@@ -159,7 +159,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>38</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>40</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -174,7 +174,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>148</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>161</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -193,13 +193,215 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
+						<span class='test-name'>Mobile Test Cases</span>
+						<span class='test-time'>Jul 22, 2020 09:23:34 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='3' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@Animation</span>
+	</div>
+	<span class='duration right label'>0h 0m 19s+830ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify Bouncing Balls in APIDemos apk - Animation</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='10' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on home screen and clicks on Animation</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='11' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Bouncing Balls</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='13' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Bouncing Balls are displayed</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='17' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@App</span>
+	</div>
+	<span class='duration right label'>0h 0m 19s+182ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify Alert Dialogs-Single choice list in APIDemos - App</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='24' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on home screen and clicks on App</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='25' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Alert Dialogs</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='26' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Single choice list and choose Traffic</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='28' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Traffic should be selected</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='32' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@App</span>
+	</div>
+	<span class='duration right label'>0h 0m 23s+321ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify Alert Dialogs-Ultra long message in APIDemos - App</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='39' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on home screen and clicks on App</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='40' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Alert Dialogs</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='41' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Ultra long message and swipe till last</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='45' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User clicks on Ultra long message OK</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='46' status='pass'>
+	<span class='duration right label'>0h 0m 41s+753ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify Alert Dialogs-Text Entry dialog in APIDemos - App</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='47' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Mobile</span>
+				<span class='category label white-text'>@App</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify Alert Dialogs-Text Entry dialog in APIDemos - App</span>
+			
+				<ul class='steps'>
+					<li test-id='48' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User is on home screen and clicks on App</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='50' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on Alert Dialogs</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='52' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Text Entry dialog and enter username1 , password1</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='53' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User clicks on Text Entry dialog OK</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='55' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Mobile</span>
+				<span class='category label white-text'>@App</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify Alert Dialogs-Text Entry dialog in APIDemos - App</span>
+			
+				<ul class='steps'>
+					<li test-id='60' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User is on home screen and clicks on App</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='61' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on Alert Dialogs</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='63' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Text Entry dialog and enter username2 , password2</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='66' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User clicks on Text Entry dialog OK</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='2'>
+					<div class='test-heading'>
 						<span class='test-name'>Verify Demo QA Website</span>
-						<span class='test-time'>Jul 17, 2020 08:10:27 PM</span>
+						<span class='test-time'>Jul 22, 2020 09:23:34 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='4' status='pass'>
-	<span class='duration right label'>0h 0m 10s+101ms</span>
+	<span class='duration right label'>0h 0m 10s+264ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Text Box functionality</span>
@@ -213,7 +415,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='7' class='node when pass' status='pass'>
+		<li test-id='6' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -221,7 +423,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='8' class='node and pass' status='pass'>
+		<li test-id='7' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -229,7 +431,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='9' class='node then pass' status='pass'>
+		<li test-id='8' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -239,14 +441,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='11' status='pass'>
-	<span class='duration right label'>0h 0m 7s+996ms</span>
+<div class='scenario node' test-id='9' status='pass'>
+	<span class='duration right label'>0h 0m 8s+319ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Check Box functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='14' class='node given pass' status='pass'>
+		<li test-id='12' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -254,7 +456,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='15' class='node when pass' status='pass'>
+		<li test-id='14' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -262,7 +464,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='16' class='node and pass' status='pass'>
+		<li test-id='15' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -270,7 +472,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='17' class='node then pass' status='pass'>
+		<li test-id='16' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -281,13 +483,13 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='18' status='pass'>
-	<span class='duration right label'>0h 0m 8s+163ms</span>
+	<span class='duration right label'>0h 0m 8s+182ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Radio Button functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='22' class='node given pass' status='pass'>
+		<li test-id='19' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -295,7 +497,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='24' class='node when pass' status='pass'>
+		<li test-id='20' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -303,7 +505,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='25' class='node and pass' status='pass'>
+		<li test-id='21' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -311,7 +513,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='26' class='node then pass' status='pass'>
+		<li test-id='22' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -321,14 +523,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='27' status='pass'>
-	<span class='duration right label'>0h 0m 8s+295ms</span>
+<div class='scenario node' test-id='23' status='pass'>
+	<span class='duration right label'>0h 0m 9s+455ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Web Tables functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='29' class='node given pass' status='pass'>
+		<li test-id='27' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -336,7 +538,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='31' class='node when pass' status='pass'>
+		<li test-id='29' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -344,7 +546,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='32' class='node and pass' status='pass'>
+		<li test-id='30' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -352,7 +554,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='33' class='node then pass' status='pass'>
+		<li test-id='31' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -362,14 +564,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='36' status='pass'>
-	<span class='duration right label'>0h 0m 8s+721ms</span>
+<div class='scenario node' test-id='33' status='pass'>
+	<span class='duration right label'>0h 0m 8s+417ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Buttons functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='38' class='node given pass' status='pass'>
+		<li test-id='34' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -377,7 +579,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='41' class='node when pass' status='pass'>
+		<li test-id='35' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -385,7 +587,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='42' class='node and pass' status='pass'>
+		<li test-id='36' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -393,7 +595,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='43' class='node then pass' status='pass'>
+		<li test-id='37' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -403,14 +605,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='44' status='pass'>
-	<span class='duration right label'>0h 0m 30s+660ms</span>
+<div class='scenario node' test-id='38' status='pass'>
+	<span class='duration right label'>0h 0m 30s+121ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify API Links functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='46' class='node given pass' status='pass'>
+		<li test-id='42' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -418,7 +620,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='50' class='node when pass' status='pass'>
+		<li test-id='43' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -426,7 +628,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='51' class='node and pass' status='pass'>
+		<li test-id='44' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -434,7 +636,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='60' class='node then pass' status='pass'>
+		<li test-id='49' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -444,14 +646,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='61' status='pass'>
-	<span class='duration right label'>0h 0m 12s+73ms</span>
+<div class='scenario node' test-id='51' status='pass'>
+	<span class='duration right label'>0h 0m 12s+546ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify New Tab Links functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='68' class='node given pass' status='pass'>
+		<li test-id='54' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -459,7 +661,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='69' class='node when pass' status='pass'>
+		<li test-id='56' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -467,7 +669,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='70' class='node and pass' status='pass'>
+		<li test-id='57' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -475,7 +677,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='74' class='node then pass' status='pass'>
+		<li test-id='58' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -485,14 +687,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='75' status='pass'>
-	<span class='duration right label'>0h 0m 13s+376ms</span>
+<div class='scenario node' test-id='59' status='pass'>
+	<span class='duration right label'>0h 0m 13s+412ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Download functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='78' class='node given pass' status='pass'>
+		<li test-id='62' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -500,7 +702,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='81' class='node when pass' status='pass'>
+		<li test-id='64' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -508,7 +710,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='82' class='node and pass' status='pass'>
+		<li test-id='65' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -516,7 +718,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='84' class='node then pass' status='pass'>
+		<li test-id='69' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -526,14 +728,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='86' status='pass'>
-	<span class='duration right label'>0h 0m 16s+358ms</span>
+<div class='scenario node' test-id='70' status='pass'>
+	<span class='duration right label'>0h 0m 16s+568ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Upload functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='90' class='node given pass' status='pass'>
+		<li test-id='74' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -541,7 +743,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='92' class='node when pass' status='pass'>
+		<li test-id='78' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -549,7 +751,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='93' class='node and pass' status='pass'>
+		<li test-id='79' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -557,7 +759,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='98' class='node then pass' status='pass'>
+		<li test-id='82' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -567,14 +769,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='99' status='pass'>
-	<span class='duration right label'>0h 0m 14s+747ms</span>
+<div class='scenario node' test-id='83' status='pass'>
+	<span class='duration right label'>0h 0m 14s+352ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Dynamic Properties functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='102' class='node given pass' status='pass'>
+		<li test-id='84' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -582,7 +784,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='106' class='node when pass' status='pass'>
+		<li test-id='85' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -590,7 +792,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='107' class='node then pass' status='pass'>
+		<li test-id='86' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -600,14 +802,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='110' status='pass'>
-	<span class='duration right label'>0h 0m 15s+612ms</span>
+<div class='scenario node' test-id='90' status='pass'>
+	<span class='duration right label'>0h 0m 17s+195ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Practice Form functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='113' class='node given pass' status='pass'>
+		<li test-id='95' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -615,7 +817,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='115' class='node when pass' status='pass'>
+		<li test-id='96' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -623,7 +825,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='116' class='node and pass' status='pass'>
+		<li test-id='97' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -631,7 +833,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='121' class='node and pass' status='pass'>
+		<li test-id='99' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -639,7 +841,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='122' class='node then pass' status='pass'>
+		<li test-id='102' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -649,14 +851,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='123' status='pass'>
-	<span class='duration right label'>0h 0m 14s+264ms</span>
+<div class='scenario node' test-id='103' status='pass'>
+	<span class='duration right label'>0h 0m 15s+980ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Browser Windows functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='127' class='node given pass' status='pass'>
+		<li test-id='108' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -664,7 +866,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='129' class='node when pass' status='pass'>
+		<li test-id='109' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -672,7 +874,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='130' class='node and pass' status='pass'>
+		<li test-id='110' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -680,7 +882,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='131' class='node and pass' status='pass'>
+		<li test-id='112' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -688,7 +890,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='132' class='node and pass' status='pass'>
+		<li test-id='115' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -698,14 +900,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='133' status='pass'>
-	<span class='duration right label'>0h 0m 14s+837ms</span>
+<div class='scenario node' test-id='116' status='pass'>
+	<span class='duration right label'>0h 0m 18s+938ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Alerts functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='134' class='node given pass' status='pass'>
+		<li test-id='121' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -713,7 +915,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='135' class='node when pass' status='pass'>
+		<li test-id='124' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -721,7 +923,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='136' class='node and pass' status='pass'>
+		<li test-id='125' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -729,7 +931,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='137' class='node and pass' status='pass'>
+		<li test-id='126' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -737,7 +939,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='138' class='node and pass' status='pass'>
+		<li test-id='130' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -745,7 +947,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='139' class='node and pass' status='pass'>
+		<li test-id='131' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -755,14 +957,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='140' status='pass'>
-	<span class='duration right label'>0h 0m 9s+204ms</span>
+<div class='scenario node' test-id='132' status='pass'>
+	<span class='duration right label'>0h 0m 8s+911ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Frames functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='141' class='node given pass' status='pass'>
+		<li test-id='138' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -770,7 +972,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='142' class='node when pass' status='pass'>
+		<li test-id='139' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -778,7 +980,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='143' class='node then pass' status='pass'>
+		<li test-id='140' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -788,14 +990,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='144' status='pass'>
-	<span class='duration right label'>0h 0m 16s+328ms</span>
+<div class='scenario node' test-id='141' status='pass'>
+	<span class='duration right label'>0h 0m 16s+822ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Modal Dialogs functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='145' class='node given pass' status='pass'>
+		<li test-id='146' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -803,7 +1005,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='146' class='node when pass' status='pass'>
+		<li test-id='148' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -811,7 +1013,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='147' class='node and pass' status='pass'>
+		<li test-id='149' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -819,7 +1021,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='148' class='node and pass' status='pass'>
+		<li test-id='151' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -829,14 +1031,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='149' status='pass'>
-	<span class='duration right label'>0h 0m 12s+599ms</span>
+<div class='scenario node' test-id='155' status='pass'>
+	<span class='duration right label'>0h 0m 12s+338ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Accordian functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='150' class='node given pass' status='pass'>
+		<li test-id='157' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -844,7 +1046,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='151' class='node when pass' status='pass'>
+		<li test-id='159' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -852,7 +1054,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='152' class='node and pass' status='pass'>
+		<li test-id='162' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -860,7 +1062,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='153' class='node then pass' status='pass'>
+		<li test-id='164' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -870,14 +1072,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='154' status='pass'>
-	<span class='duration right label'>0h 0m 8s+307ms</span>
+<div class='scenario node' test-id='165' status='pass'>
+	<span class='duration right label'>0h 0m 9s+247ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Auto Complete functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='155' class='node given pass' status='pass'>
+		<li test-id='168' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -885,7 +1087,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='156' class='node when pass' status='pass'>
+		<li test-id='170' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -893,7 +1095,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='157' class='node and pass' status='pass'>
+		<li test-id='171' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -901,7 +1103,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='158' class='node then pass' status='pass'>
+		<li test-id='172' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -911,14 +1113,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='159' status='pass'>
-	<span class='duration right label'>0h 0m 33s+681ms</span>
+<div class='scenario node' test-id='174' status='pass'>
+	<span class='duration right label'>0h 0m 38s+548ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Date Picker functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='160' class='node given pass' status='pass'>
+		<li test-id='175' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -926,7 +1128,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='161' class='node when pass' status='pass'>
+		<li test-id='176' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -934,7 +1136,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='162' class='node and pass' status='pass'>
+		<li test-id='177' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -942,7 +1144,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='163' class='node and pass' status='pass'>
+		<li test-id='178' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -950,7 +1152,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='164' class='node then pass' status='pass'>
+		<li test-id='179' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -960,134 +1162,11 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='165' status='pass'>
-	<span class='duration right label'>0h 0m 10s+138ms</span>
+<div class='scenario node' test-id='180' status='pass'>
+	<span class='duration right label'>0h 0m 10s+837ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Slider functionality</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='166' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User navigates to "https://demoqa.com/widgets" website</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='167' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When User clicks on Slider</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='168' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And User slides the slider</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='169' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then Verify the slider value</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='170' status='pass'>
-	<span class='duration right label'>0h 0m 18s+138ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Verify Progress Bar functionality</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='171' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User navigates to "https://demoqa.com/widgets" website</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='172' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When User clicks on Progress Bar</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='173' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And User clicks on Start button and waits for the progress bar to complete</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='174' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then Verify progress bar value is "100"</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='175' status='pass'>
-	<span class='duration right label'>0h 0m 9s+22ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Verify Tabs functionality</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='176' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User navigates to "https://demoqa.com/widgets" website</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='177' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When User clicks on Tabs</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='178' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And User clicks on any Tab and verify its active</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='179' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then Verify disabled tab as well</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='180' status='pass'>
-	<span class='duration right label'>0h 0m 10s+374ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Verify Tool Tips functionality</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='181' class='node given pass' status='pass'>
@@ -1102,11 +1181,134 @@
 			
 			<b>When</b>
 			
-			<span class="bdd-step-name">When User clicks on Tool Tips</span>
+			<span class="bdd-step-name">When User clicks on Slider</span>
 				<div class='pre'>passed</div>
 			
 		</li>
 		<li test-id='183' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User slides the slider</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='184' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Verify the slider value</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='185' status='pass'>
+	<span class='duration right label'>0h 0m 18s+490ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify Progress Bar functionality</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='186' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigates to "https://demoqa.com/widgets" website</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='187' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Progress Bar</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='188' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Start button and waits for the progress bar to complete</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='189' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Verify progress bar value is "100"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='190' status='pass'>
+	<span class='duration right label'>0h 0m 8s+388ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify Tabs functionality</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='191' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigates to "https://demoqa.com/widgets" website</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='192' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Tabs</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='193' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on any Tab and verify its active</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='194' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Verify disabled tab as well</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='195' status='pass'>
+	<span class='duration right label'>0h 0m 10s+713ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify Tool Tips functionality</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='196' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigates to "https://demoqa.com/widgets" website</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='197' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Tool Tips</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='198' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -1116,14 +1318,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='184' status='pass'>
-	<span class='duration right label'>0h 0m 9s+176ms</span>
+<div class='scenario node' test-id='199' status='pass'>
+	<span class='duration right label'>0h 0m 8s+806ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Menu functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='185' class='node given pass' status='pass'>
+		<li test-id='200' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -1131,7 +1333,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='186' class='node when pass' status='pass'>
+		<li test-id='201' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -1139,7 +1341,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='187' class='node and pass' status='pass'>
+		<li test-id='202' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -1149,14 +1351,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='188' status='pass'>
-	<span class='duration right label'>0h 0m 8s+331ms</span>
+<div class='scenario node' test-id='203' status='pass'>
+	<span class='duration right label'>0h 0m 9s+289ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Select Menu functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='189' class='node given pass' status='pass'>
+		<li test-id='204' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -1164,7 +1366,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='190' class='node when pass' status='pass'>
+		<li test-id='205' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -1172,7 +1374,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='191' class='node and pass' status='pass'>
+		<li test-id='206' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -1180,7 +1382,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='192' class='node then pass' status='pass'>
+		<li test-id='207' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -1194,223 +1396,21 @@
 				</li>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='2'>
-					<div class='test-heading'>
-						<span class='test-name'>Mobile Test Cases</span>
-						<span class='test-time'>Jul 17, 2020 08:10:27 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='scenario node' test-id='3' status='pass'>
-	<div class='category-list'>
-		<span class='category label white-text'>@Animation</span>
-	</div>
-	<span class='duration right label'>0h 0m 13s+849ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Verify Bouncing Balls in APIDemos apk - Animation</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='6' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User is on home screen and clicks on Animation</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='10' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When User clicks on Bouncing Balls</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='12' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then Bouncing Balls are displayed</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='13' status='pass'>
-	<div class='category-list'>
-		<span class='category label white-text'>@App</span>
-	</div>
-	<span class='duration right label'>0h 0m 14s+106ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Verify Alert Dialogs-Single choice list in APIDemos - App</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='19' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User is on home screen and clicks on App</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='20' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When User clicks on Alert Dialogs</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='21' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And User clicks on Single choice list and choose Traffic</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='23' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then Traffic should be selected</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='28' status='pass'>
-	<div class='category-list'>
-		<span class='category label white-text'>@App</span>
-	</div>
-	<span class='duration right label'>0h 0m 16s+76ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Verify Alert Dialogs-Ultra long message in APIDemos - App</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='30' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User is on home screen and clicks on App</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='34' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When User clicks on Alert Dialogs</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='35' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And User clicks on Ultra long message and swipe till last</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='37' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then User clicks on Ultra long message OK</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenariooutline node' test-id='39' status='pass'>
-	<span class='duration right label'>0h 0m 27s+446ms</span>
-	<div class='desc'>
-		<b>ScenarioOutline</b>
-		<span class="desc-text">Verify Alert Dialogs-Text Entry dialog in APIDemos - App</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='40' class='node scenario pass' status='pass'>
-			<div class='category-list'>
-				<span class='category label white-text'>@Mobile</span>
-				<span class='category label white-text'>@App</span>
-			</div>
-			
-			<b>Scenario</b>
-			
-			<span class="bdd-step-name">Verify Alert Dialogs-Text Entry dialog in APIDemos - App</span>
-			
-				<ul class='steps'>
-					<li test-id='45' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User is on home screen and clicks on App</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='47' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When User clicks on Alert Dialogs</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='48' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And User clicks on Text Entry dialog and enter username1 , password1</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='49' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then User clicks on Text Entry dialog OK</span>
-							<div class='pre'>passed</div>
-					</li>
-				</ul>
-		</li>
-		<li test-id='52' class='node scenario pass' status='pass'>
-			<div class='category-list'>
-				<span class='category label white-text'>@Mobile</span>
-				<span class='category label white-text'>@App</span>
-			</div>
-			
-			<b>Scenario</b>
-			
-			<span class="bdd-step-name">Verify Alert Dialogs-Text Entry dialog in APIDemos - App</span>
-			
-				<ul class='steps'>
-					<li test-id='53' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User is on home screen and clicks on App</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='54' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When User clicks on Alert Dialogs</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='55' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And User clicks on Text Entry dialog and enter username2 , password2</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='56' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then User clicks on Text Entry dialog OK</span>
-							<div class='pre'>passed</div>
-					</li>
-				</ul>
-		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='57'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='67'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Book Store Application</span>
-						<span class='test-time'>Jul 17, 2020 08:11:40 PM</span>
+						<span class='test-time'>Jul 22, 2020 09:25:21 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='58' status='pass'>
-	<span class='duration right label'>0h 0m 8s+998ms</span>
+<div class='scenario node' test-id='68' status='pass'>
+	<span class='duration right label'>0h 0m 9s+482ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Login functionality in Book Store Application</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='59' class='node given pass' status='pass'>
+		<li test-id='71' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -1418,7 +1418,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='62' class='node when pass' status='pass'>
+		<li test-id='72' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -1426,7 +1426,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='63' class='node and pass' status='pass'>
+		<li test-id='73' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -1434,7 +1434,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='64' class='node and pass' status='pass'>
+		<li test-id='75' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -1442,7 +1442,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='65' class='node then pass' status='pass'>
+		<li test-id='76' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -1452,25 +1452,147 @@
 		</li>
 	</ul>
 </div>
+<div class='scenario node' test-id='77' status='pass'>
+	<span class='duration right label'>0h 0m 18s+605ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify Selecting Book in Book Store Application</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='80' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Book Store Application "https://demoqa.com/books"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='81' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User selects "Speaking JavaScript" book from the list</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='87' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Details about the book "Speaking JavaScript" should be displayed</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='88' status='pass'>
+	<span class='duration right label'>0h 0m 25s+872ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Adding book to your collection and deleting it</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='89' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Book Store Application "https://demoqa.com/books"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='91' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Login</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='92' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters Username "karansaini" and Password "Password@2020!"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='93' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Login to sign in</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='94' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User selects "Speaking JavaScript" book from the list</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='98' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User Click on Add to your Collection</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='100' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User go to Profile and verify Book "Speaking JavaScript" should be added in collection</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='101' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User delete the book from collection</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='104' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Verifying that book is deleted successfully</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='105' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User Log Out from Book Store</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
 					</div>
 				</li>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='66'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='106'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Home Page</span>
-						<span class='test-time'>Jul 17, 2020 08:11:50 PM</span>
+						<span class='test-time'>Jul 22, 2020 09:26:19 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='67' status='pass'>
-	<span class='duration right label'>0h 0m 7s+114ms</span>
+<div class='scenario node' test-id='107' status='pass'>
+	<span class='duration right label'>0h 0m 8s+470ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Home Page Title</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='71' class='node given pass' status='pass'>
+		<li test-id='111' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -1478,7 +1600,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='72' class='node then pass' status='pass'>
+		<li test-id='113' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -1488,14 +1610,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='73' status='pass'>
-	<span class='duration right label'>0h 0m 6s+445ms</span>
+<div class='scenario node' test-id='114' status='pass'>
+	<span class='duration right label'>0h 0m 7s+152ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Home Page Default Welcome Message</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='76' class='node given pass' status='pass'>
+		<li test-id='117' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -1503,7 +1625,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='77' class='node then pass' status='pass'>
+		<li test-id='118' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -1517,21 +1639,21 @@
 				</li>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='79'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='119'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Interaction on Demo QA Website</span>
-						<span class='test-time'>Jul 17, 2020 08:12:05 PM</span>
+						<span class='test-time'>Jul 22, 2020 09:26:37 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='80' status='pass'>
-	<span class='duration right label'>0h 0m 9s+793ms</span>
+<div class='scenario node' test-id='120' status='pass'>
+	<span class='duration right label'>0h 0m 10s+724ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Simple Droppable functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='83' class='node given pass' status='pass'>
+		<li test-id='122' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -1539,7 +1661,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='85' class='node when pass' status='pass'>
+		<li test-id='123' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -1547,7 +1669,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='87' class='node and pass' status='pass'>
+		<li test-id='127' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -1555,7 +1677,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='88' class='node then pass' status='pass'>
+		<li test-id='128' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -1565,14 +1687,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='89' status='pass'>
-	<span class='duration right label'>0h 0m 9s+870ms</span>
+<div class='scenario node' test-id='129' status='pass'>
+	<span class='duration right label'>0h 0m 9s+777ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Acceptable Droppable functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='91' class='node given pass' status='pass'>
+		<li test-id='133' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -1580,7 +1702,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='94' class='node when pass' status='pass'>
+		<li test-id='134' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -1588,7 +1710,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='95' class='node and pass' status='pass'>
+		<li test-id='135' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -1596,7 +1718,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='96' class='node then pass' status='pass'>
+		<li test-id='136' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -1606,14 +1728,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='97' status='pass'>
-	<span class='duration right label'>0h 0m 9s+857ms</span>
+<div class='scenario node' test-id='137' status='pass'>
+	<span class='duration right label'>0h 0m 9s+714ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Not Acceptable Droppable functionality</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='100' class='node given pass' status='pass'>
+		<li test-id='142' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -1621,7 +1743,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='101' class='node when pass' status='pass'>
+		<li test-id='143' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -1629,7 +1751,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='103' class='node and pass' status='pass'>
+		<li test-id='144' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -1637,7 +1759,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='104' class='node then pass' status='pass'>
+		<li test-id='145' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -1647,14 +1769,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='105' status='pass'>
-	<span class='duration right label'>0h 0m 9s+260ms</span>
+<div class='scenario node' test-id='147' status='pass'>
+	<span class='duration right label'>0h 0m 9s+643ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Sortable on Demo QA Website</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='108' class='node given pass' status='pass'>
+		<li test-id='150' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -1662,7 +1784,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='109' class='node when pass' status='pass'>
+		<li test-id='152' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -1670,7 +1792,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='111' class='node then pass' status='pass'>
+		<li test-id='153' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -1680,14 +1802,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='112' status='pass'>
-	<span class='duration right label'>0h 0m 9s+191ms</span>
+<div class='scenario node' test-id='154' status='pass'>
+	<span class='duration right label'>0h 0m 9s+640ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Selectable on Demo QA Website</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='114' class='node given pass' status='pass'>
+		<li test-id='156' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -1695,7 +1817,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='117' class='node when pass' status='pass'>
+		<li test-id='158' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -1703,7 +1825,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='118' class='node and pass' status='pass'>
+		<li test-id='160' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -1711,7 +1833,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='119' class='node then pass' status='pass'>
+		<li test-id='161' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -1721,14 +1843,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='120' status='pass'>
-	<span class='duration right label'>0h 0m 12s+564ms</span>
+<div class='scenario node' test-id='163' status='pass'>
+	<span class='duration right label'>0h 0m 12s+658ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Resizable on Demo QA Website</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='124' class='node given pass' status='pass'>
+		<li test-id='166' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -1736,7 +1858,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='125' class='node when pass' status='pass'>
+		<li test-id='167' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -1744,7 +1866,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='126' class='node and pass' status='pass'>
+		<li test-id='169' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -1752,7 +1874,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='128' class='node then pass' status='pass'>
+		<li test-id='173' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -1816,40 +1938,6 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Demo</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 17, 2020 08:10:27 PM</td>
-										<td class='linked' test-id='1'>Verify Demo QA Website</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
 						<span class='category-name'>@Mobile</span>
 						<span class='category-status right'>
 							<span class='label pass'>3</span>
@@ -1873,18 +1961,18 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 17, 2020 08:10:27 PM</td>
-										<td class='linked' test-id='2'>Mobile Test Cases</td>
+										<td>Jul 22, 2020 09:23:34 PM</td>
+										<td class='linked' test-id='1'>Mobile Test Cases</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 17, 2020 08:11:12 PM</td>
-										<td class='linked' test-id='40'>Mobile Test Cases.Verify Alert Dialogs-Text Entry dialog in APIDemos - App.Verify Alert Dialogs-Text Entry dialog in APIDemos - App</td>
+										<td>Jul 22, 2020 09:24:39 PM</td>
+										<td class='linked' test-id='47'>Mobile Test Cases.Verify Alert Dialogs-Text Entry dialog in APIDemos - App.Verify Alert Dialogs-Text Entry dialog in APIDemos - App</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 17, 2020 08:11:26 PM</td>
-										<td class='linked' test-id='52'>Mobile Test Cases.Verify Alert Dialogs-Text Entry dialog in APIDemos - App.Verify Alert Dialogs-Text Entry dialog in APIDemos - App</td>
+										<td>Jul 22, 2020 09:25:01 PM</td>
+										<td class='linked' test-id='55'>Mobile Test Cases.Verify Alert Dialogs-Text Entry dialog in APIDemos - App.Verify Alert Dialogs-Text Entry dialog in APIDemos - App</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -1917,8 +2005,42 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 17, 2020 08:10:27 PM</td>
+										<td>Jul 22, 2020 09:23:34 PM</td>
 										<td class='linked' test-id='3'>Mobile Test Cases.Verify Bouncing Balls in APIDemos apk - Animation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Demo</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 22, 2020 09:23:34 PM</td>
+										<td class='linked' test-id='2'>Verify Demo QA Website</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -1951,23 +2073,23 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 17, 2020 08:10:41 PM</td>
-										<td class='linked' test-id='13'>Mobile Test Cases.Verify Alert Dialogs-Single choice list in APIDemos - App</td>
+										<td>Jul 22, 2020 09:23:55 PM</td>
+										<td class='linked' test-id='17'>Mobile Test Cases.Verify Alert Dialogs-Single choice list in APIDemos - App</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 17, 2020 08:10:56 PM</td>
-										<td class='linked' test-id='28'>Mobile Test Cases.Verify Alert Dialogs-Ultra long message in APIDemos - App</td>
+										<td>Jul 22, 2020 09:24:15 PM</td>
+										<td class='linked' test-id='32'>Mobile Test Cases.Verify Alert Dialogs-Ultra long message in APIDemos - App</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 17, 2020 08:11:12 PM</td>
-										<td class='linked' test-id='40'>Mobile Test Cases.Verify Alert Dialogs-Text Entry dialog in APIDemos - App.Verify Alert Dialogs-Text Entry dialog in APIDemos - App</td>
+										<td>Jul 22, 2020 09:24:39 PM</td>
+										<td class='linked' test-id='47'>Mobile Test Cases.Verify Alert Dialogs-Text Entry dialog in APIDemos - App.Verify Alert Dialogs-Text Entry dialog in APIDemos - App</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 17, 2020 08:11:26 PM</td>
-										<td class='linked' test-id='52'>Mobile Test Cases.Verify Alert Dialogs-Text Entry dialog in APIDemos - App.Verify Alert Dialogs-Text Entry dialog in APIDemos - App</td>
+										<td>Jul 22, 2020 09:25:01 PM</td>
+										<td class='linked' test-id='55'>Mobile Test Cases.Verify Alert Dialogs-Text Entry dialog in APIDemos - App.Verify Alert Dialogs-Text Entry dialog in APIDemos - App</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -2000,8 +2122,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 17, 2020 08:11:40 PM</td>
-										<td class='linked' test-id='57'>Verify Book Store Application</td>
+										<td>Jul 22, 2020 09:25:21 PM</td>
+										<td class='linked' test-id='67'>Verify Book Store Application</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -2034,8 +2156,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 17, 2020 08:11:50 PM</td>
-										<td class='linked' test-id='66'>Verify Home Page</td>
+										<td>Jul 22, 2020 09:26:19 PM</td>
+										<td class='linked' test-id='106'>Verify Home Page</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -2068,8 +2190,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 17, 2020 08:12:05 PM</td>
-										<td class='linked' test-id='79'>Verify Interaction on Demo QA Website</td>
+										<td>Jul 22, 2020 09:26:37 PM</td>
+										<td class='linked' test-id='119'>Verify Interaction on Demo QA Website</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -2104,31 +2226,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>38</div>
+					<div class='panel-lead'>40</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>148</div>
+					<div class='panel-lead'>161</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 17, 2020 08:10:27 PM</div>
+					<div class='panel-lead'>Jul 22, 2020 09:23:34 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 17, 2020 08:16:08 PM</div>
+			 		<div class='panel-lead'>Jul 22, 2020 09:29:39 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>341,720ms</div>
+					<div class='panel-lead'>364,758ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -2144,15 +2266,6 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Demo</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
 							<td>@Mobile</td>
 							<td>3</td>
 							<td>0</td>
@@ -2163,6 +2276,15 @@
 						</tr>
 						<tr>
 							<td>@Animation</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Demo</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -2227,7 +2349,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 38,
+				passChild: 40,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -2236,7 +2358,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 148,
+				passGrandChild: 161,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
